@@ -75,7 +75,9 @@ class AgencyController extends Controller
     {
         $model = Agency::findOne($id);
 
-        return $this->render('update', ['model' => $model]);
+        return $this->render('update', [
+				'model' => $model
+		]);
     }
 
     public function actionDelete($id)
