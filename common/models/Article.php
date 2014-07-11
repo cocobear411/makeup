@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "article".
  *
- * @property integer $id
+ * @property string $id
  * @property string $title
  * @property string $content
  * @property string $create_time
@@ -29,8 +29,7 @@ class Article extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'title', 'content', 'create_time', 'update_time'], 'required'],
-            [['id'], 'integer'],
+            [['title', 'content', 'create_time', 'update_time'], 'required'],
             [['content'], 'string'],
             [['create_time', 'update_time'], 'safe'],
             [['title'], 'string', 'max' => 255]

@@ -6,6 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Agency */
 
+\Yii::$app->request->setBaseUrl("../../upload");
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Agencies', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -30,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'code',
-            'image',
+            'image:image',
             'create_time',
             'update_time',
         ],

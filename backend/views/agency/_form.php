@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Agency */
@@ -14,7 +15,21 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'code')->textInput(['maxlength' => 32]) ?>
 
-    <?= $form->field($model, 'image')->textInput(['maxlength' => 225]) ?>
+    <?php
+    if (!empty($model->image))
+    {
+        $model->image = "../../upload/" . $model->image;
+        $imginfo = Html::img("{$model->image}", ['class'=>'file-preview-image', 'alt'=>'Images', 'title'=>'Images']); 
+    }
+
+    echo $form->field($model, 'image')->widget(FileInput::classname(), [
+        'options'       => ['accept' => 'image/*'],
+        'pluginOptions' => [
+            'initialPreview' => isset($imginfo) ? $imginfo : "",
+            'initialCaption' => "你上传的图像"
+        ],
+    ]);
+    ?>
 
     <?= $form->field($model, 'create_time')->textInput() ?>
 
