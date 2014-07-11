@@ -42,8 +42,9 @@ AppAsset::register($this);
             }
             else
             {
-                $menuItems[] = ['label' => '公司信息', 'url' => ['company/index']];
+                $menuItems[] = ['label' => '公司信息', 'url' => ['info/index']];
                 $menuItems[] = ['label' => '产品信息', 'url' => ['product/index']];
+                $menuItems[] = ['label' => '产品类型', 'url' => ['product-type/index']];
                 $menuItems[] = ['label' => '美容讲堂', 'url' => ['article/index']];
                 $menuItems[] = ['label' => '代理信息', 'url' => ['agency/index']];
 

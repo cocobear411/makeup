@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Agency;
-use common\models\search\AgencySearch;
+use common\models\Product;
+use common\models\search\ProductSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * AgencyController implements the CRUD actions for Agency model.
+ * ProductController implements the CRUD actions for Product model.
  */
-class AgencyController extends Controller
+class ProductController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class AgencyController extends Controller
     }
 
     /**
-     * Lists all Agency models.
+     * Lists all Product models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new AgencySearch();
+        $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,8 +42,8 @@ class AgencyController extends Controller
     }
 
     /**
-     * Displays a single Agency model.
-     * @param integer $id
+     * Displays a single Product model.
+     * @param string $id
      * @return mixed
      */
     public function actionView($id)
@@ -54,13 +54,13 @@ class AgencyController extends Controller
     }
 
     /**
-     * Creates a new Agency model.
+     * Creates a new Product model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Agency();
+        $model = new Product();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,9 +72,9 @@ class AgencyController extends Controller
     }
 
     /**
-     * Updates an existing Agency model.
+     * Updates an existing Product model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionUpdate($id)
@@ -91,9 +91,9 @@ class AgencyController extends Controller
     }
 
     /**
-     * Deletes an existing Agency model.
+     * Deletes an existing Product model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionDelete($id)
@@ -104,15 +104,15 @@ class AgencyController extends Controller
     }
 
     /**
-     * Finds the Agency model based on its primary key value.
+     * Finds the Product model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Agency the loaded model
+     * @param string $id
+     * @return Product the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Agency::findOne($id)) !== null) {
+        if (($model = Product::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

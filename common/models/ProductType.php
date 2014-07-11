@@ -13,7 +13,7 @@ use Yii;
  * @property string $create_time
  * @property string $update_time
  */
-class Product_type extends \yii\db\ActiveRecord
+class ProductType extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

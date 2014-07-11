@@ -4,17 +4,19 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Agency */
+/* @var $model common\models\Product */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="agency-form">
+<div class="product-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'code')->textInput(['maxlength' => 32]) ?>
+    <?= $form->field($model, 'type')->textInput(['maxlength' => 32]) ?>
 
-    <?= $form->field($model, 'image')->textInput(['maxlength' => 225]) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => 32]) ?>
+
+    <?= $form->field($model, 'image')->textInput(['maxlength' => 255]) ?>
 
     <?= $form->field($model, 'create_time')->textInput() ?>
 

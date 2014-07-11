@@ -5,12 +5,12 @@ namespace common\models\search;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Agency;
+use common\models\Article;
 
 /**
- * AgencySearch represents the model behind the search form about `common\models\Agency`.
+ * ArticleSearch represents the model behind the search form about `common\models\Article`.
  */
-class AgencySearch extends Agency
+class ArticleSearch extends Article
 {
     /**
      * @inheritdoc
@@ -19,7 +19,7 @@ class AgencySearch extends Agency
     {
         return [
             [['id'], 'integer'],
-            [['code', 'image', 'create_time', 'update_time'], 'safe'],
+            [['title', 'content', 'create_time', 'update_time'], 'safe'],
         ];
     }
 
@@ -38,7 +38,7 @@ class AgencySearch extends Agency
      */
     public function search($params)
     {
-        $query = Agency::find();
+        $query = Article::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -54,8 +54,8 @@ class AgencySearch extends Agency
             'update_time' => $this->update_time,
         ]);
 
-        $query->andFilterWhere(['like', 'code', $this->code])
-            ->andFilterWhere(['like', 'image', $this->image]);
+        $query->andFilterWhere(['like', 'title', $this->title])
+            ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;
     }
