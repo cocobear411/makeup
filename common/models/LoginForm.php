@@ -14,6 +14,19 @@ class LoginForm extends Model
     public $rememberMe = true;
 
     private $_user = false;
+    
+    
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'username'          => '用户',
+            'password'        => '密码',
+            'rememberMe'       => '下次自动登陆',
+        ];
+    }
 
     /**
      * @inheritdoc

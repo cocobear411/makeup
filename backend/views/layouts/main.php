@@ -1,4 +1,5 @@
 <?php
+
 use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
@@ -13,60 +14,70 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
-<head>
-    <meta charset="<?= Yii::$app->charset ?>"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-</head>
-<body>
-    <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
+    <head>
+        <meta charset="<?= Yii::$app->charset ?>"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?= Html::csrfMetaTags() ?>
+        <title><?= Html::encode($this->title) ?></title>
+        <?php $this->head() ?>
+    </head>
+    <body>
+        <?php $this->beginBody() ?>
+        <div class="wrap">
+            <?php
             NavBar::begin([
-                'brandLabel' => '萱肌蜜',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
+                'brandLabel' => '公司',
+                'brandUrl'   => Yii::$app->homeUrl,
+                'options'    => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
             $menuItems = [
                 ['label' => '主页', 'url' => ['/site/index']],
-                ['label' => '代理信息', 'url' => ['agency/index']],
             ];
-            if (Yii::$app->user->isGuest) {
+
+            if (Yii::$app->user->isGuest)
+            {
                 $menuItems[] = ['label' => '登陆', 'url' => ['/site/login']];
-            } else {
+            }
+            else
+            {
+                $menuItems[] = ['label' => '公司信息', 'url' => ['company/index']];
+                $menuItems[] = ['label' => '产品信息', 'url' => ['product/index']];
+                $menuItems[] = ['label' => '美容讲堂', 'url' => ['article/index']];
+                $menuItems[] = ['label' => '代理信息', 'url' => ['agency/index']];
+
                 $menuItems[] = [
-                    'label' => '注销 (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
+                    'label'       => '注销 (' . Yii::$app->user->identity->username . ')',
+                    'url'         => ['/site/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ];
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
+                'items'   => $menuItems,
             ]);
             NavBar::end();
-        ?>
+            ?>
 
-        <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
+            <div class="container">
+                <?=
+                Breadcrumbs::widget([
+                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                ])
+                ?>
+                <?= $content ?>
+            </div>
         </div>
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+                <p class="pull-right"><?= Yii::powered() ?></p>
+            </div>
+        </footer>
 
-    <?php $this->endBody() ?>
-</body>
+        <?php $this->endBody() ?>
+    </body>
 </html>
 <?php $this->endPage() ?>

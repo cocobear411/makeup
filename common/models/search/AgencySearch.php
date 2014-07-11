@@ -13,8 +13,8 @@ class AgencySearch extends Agency
     public function rules()
     {
         return [
-            [['id', 'create_time', 'update_time'], 'integer'],
-            [['code', 'image'], 'safe'],
+//            [['id', 'create_time', 'update_time'], 'integer'],
+            [['code', 'image', 'id', 'create_time', 'update_time'], 'safe'],
         ];
     }
 
@@ -36,14 +36,18 @@ class AgencySearch extends Agency
             return $dataProvider;
         }
 
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'create_time' => $this->create_time,
-            'update_time' => $this->update_time,
-        ]);
+//        $query->andFilterWhere([
+//            'id' => $this->id,
+//            'create_time' => $this->create_time,
+//            'update_time' => $this->update_time,
+//        ]);
 
+        //模糊匹配
         $query->andFilterWhere(['like', 'code', $this->code])
-            ->andFilterWhere(['like', 'image', $this->iamge]);
+            ->andFilterWhere(['like', 'image', $this->image])
+            ->andFilterWhere(['like', 'id', $this->id])
+            ->andFilterWhere(['like', 'create_time', $this->create_time])
+            ->andFilterWhere(['like', 'update_time', $this->update_time]);
 
         return $dataProvider;
     }
