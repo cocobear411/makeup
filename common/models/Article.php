@@ -42,11 +42,11 @@ class Article extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'title' => 'Title',
-            'content' => 'Content',
-            'create_time' => 'Create Time',
-            'update_time' => 'Update Time',
+            'id' => '文章ID',
+            'title' => '标题',
+            'content' => '内容',
+            'create_time' => '创建时间',
+            'update_time' => '更新时间',
         ];
     }
 }

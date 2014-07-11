@@ -43,12 +43,12 @@ class Product extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'type' => 'Type',
-            'name' => 'Name',
-            'image' => 'Image',
-            'create_time' => 'Create Time',
-            'update_time' => 'Update Time',
+            'id' => '产品ID',
+            'type' => '类型',
+            'name' => '名称',
+            'image' => '图片',
+            'create_time' => '创建时间',
+            'update_time' => '更新时间',
         ];
     }
 }

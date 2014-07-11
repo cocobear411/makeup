@@ -41,11 +41,11 @@ class Info extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'tag' => 'Tag',
-            'value' => 'Value',
-            'create_time' => 'Create Time',
-            'update_time' => 'Update Time',
+            'id' => '信息ID',
+            'tag' => '描述',
+            'value' => '值',
+            'create_time' => '创建时间',
+            'update_time' => '更新时间',
         ];
     }
 }
