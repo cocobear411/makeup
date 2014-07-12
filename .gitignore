@@ -1,4 +1,4 @@
-\backend\runtime\**
-\frontend\runtime\**
+\backend\runtime\**\*
+\frontend\runtime\**\*
 \backend\web\assets\**
 \frontend\web\assets\**
