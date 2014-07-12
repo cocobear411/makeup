@@ -102,8 +102,6 @@ class AgencyController extends Controller
 
         if ($model->load(Yii::$app->request->post()))
         {
-            var_dump(Yii::$app->request->post());
-
             $imageUploadFile = UploadedFile::getInstance($model, 'image');
 
             if ($imageUploadFile !== null && $imageUploadFile->tempName != null)

@@ -9,7 +9,7 @@ use Yii;
  *
  * @property integer $id
  * @property string $tag
- * @property integer $image
+ * @property string $image
  * @property string $create_time
  * @property string $update_time
  */
@@ -29,10 +29,10 @@ class Picture extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['tag', 'image', 'create_time', 'update_time'], 'required'],
-            [['image'], 'integer'],
+            [['tag', 'create_time', 'update_time'], 'required'],
             [['create_time', 'update_time'], 'safe'],
-            [['tag'], 'string', 'max' => 32]
+            [['tag'], 'string', 'max' => 32],
+            [['image'], 'string', 'max' => 255]
         ];
     }
 
@@ -42,11 +42,11 @@ class Picture extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'tag' => 'Tag',
-            'image' => 'Image',
-            'create_time' => 'Create Time',
-            'update_time' => 'Update Time',
+            'id' => '图片ID',
+            'tag' => '描述',
+            'image' => '图片',
+            'create_time' => '创建时间',
+            'update_time' => '更新时间',
         ];
     }
 }

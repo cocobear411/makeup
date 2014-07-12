@@ -8,17 +8,20 @@ use common\models\search\PictureSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use common\models\Agency;
 
 /**
  * PictureController implements the CRUD actions for Picture model.
  */
 class PictureController extends Controller
 {
+
     public function behaviors()
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class'   => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
@@ -32,12 +35,12 @@ class PictureController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new PictureSearch();
+        $searchModel  = new PictureSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+                'searchModel'  => $searchModel,
+                'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -49,7 +52,7 @@ class PictureController extends Controller
     public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+                'model' => $this->findModel($id),
         ]);
     }
 
@@ -62,13 +65,40 @@ class PictureController extends Controller
     {
         $model = new Picture();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+//        var_dump(Yii::$app->request->post());
+//        exit;
+
+        if ($model->load(Yii::$app->request->post()) && $model->save())
+        {
+            $imageUploadFile = UploadedFile::getInstance($model, 'image');
+
+            if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
+            {
+                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+
+                if ($model->save())
+                {
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
+                else
+                {
+                    exit;
+                }
+            }
+            else
+            {
+                exit;
+            }
         }
+
+//        if (Yii::$app->request->isPost)
+//        {
+//            $model->addError('image', "请上传图片");
+//        }
+
+        return $this->render('create', [
+                'model' => $model,
+        ]);
     }
 
     /**
@@ -81,13 +111,29 @@ class PictureController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        if (\Yii::$app->request->isPost)
+        {
+            $imageUploadFile = UploadedFile::getInstance($model, 'image');
+
+            if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
+            {
+                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+            }
+
+            if ($model->image == NULL)  //Bug
+            {
+                $model->image = $oldImage;
+            }
+
+            if ($model->save())
+            {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
+
+        return $this->render('update', [
+                'model' => $model,
+        ]);
     }
 
     /**
@@ -112,10 +158,14 @@ class PictureController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Picture::findOne($id)) !== null) {
+        if (($model = Picture::findOne($id)) !== null)
+        {
             return $model;
-        } else {
+        }
+        else
+        {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }

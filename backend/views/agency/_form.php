@@ -23,7 +23,7 @@ use kartik\widgets\FileInput;
         Yii::$app->request->setBaseUrl("../../upload");
         $imginfo = Html::img("{$model->image}", ['class' => 'file-preview-image', 'alt' => 'Images', 'title' => 'Images']);
     }
-        
+
     echo $form->field($model, 'image')->widget(FileInput::classname(), [
         'options'       => ['accept' => 'image/*',],
         'pluginOptions' => [
@@ -34,6 +34,7 @@ use kartik\widgets\FileInput;
             'showCaption'      => true,
             'showUpload'       => false,
             'overwriteInitial' => true,
+            'browseLabel'      => '打开',
         ],
     ]);
     ?>
