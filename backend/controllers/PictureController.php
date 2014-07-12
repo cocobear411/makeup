@@ -105,7 +105,8 @@ class PictureController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
+        $model    = $this->findModel($id);
+        $oldImage = $model->image;
 
         if (\Yii::$app->request->isPost)
         {
