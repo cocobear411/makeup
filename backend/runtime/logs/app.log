@@ -1923,3 +1923,237 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1405173346.565
     'REQUEST_TIME' => 1405173346
 ]
+2014-07-12 22:32:39 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('view', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-07-12 22:32:39 [::1][1][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'enNhYm1rYloVLFMSOgE7Hw8qOTZePS4tTgAzMDkPMSkdABQECiZWLQ=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Picture'
+        'searchModelClass' => 'common\\models\\search\\PictureSearch'
+        'controllerClass' => 'backend\\controllers\\PictureController'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'moduleID' => ''
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => 'lb6hrtos8cftpoloc7ebsnlng1'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '487'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=lb6hrtos8cftpoloc7ebsnlng1; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '60983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405175559.097
+    'REQUEST_TIME' => 1405175559
+]
+2014-07-12 22:33:46 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "image/index".' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php:466
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('image/index', Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "image/index".' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php:94
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2014-07-12 22:33:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'image/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => 'lb6hrtos8cftpoloc7ebsnlng1'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=lb6hrtos8cftpoloc7ebsnlng1; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '61041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=image%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=image%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405175626.965
+    'REQUEST_TIME' => 1405175626
+]
+2014-07-12 22:33:50 [::1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "image/index".' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php:466
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('image/index', Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "image/index".' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php:94
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2014-07-12 22:33:50 [::1][1][-][info][application] $_GET = [
+    'r' => 'image/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => 'lb6hrtos8cftpoloc7ebsnlng1'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=lb6hrtos8cftpoloc7ebsnlng1; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '61041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=image%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=image%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405175630.135
+    'REQUEST_TIME' => 1405175630
+]
