@@ -99,7 +99,7 @@ abstract class BaseListView extends Widget
             throw new InvalidConfigException('The "dataProvider" property must be set.');
         }
         if ($this->emptyText === null) {
-            $this->emptyText = Yii::t('yii', 'No results found.');
+            $this->emptyText = Yii::t('yii', '没有记录.');
         }
         if (!isset($this->options['id'])) {
             $this->options['id'] = $this->getId();
@@ -154,7 +154,7 @@ abstract class BaseListView extends Widget
     public function renderEmpty()
     {
         $tag = ArrayHelper::remove($this->emptyTextOptions, 'tag', 'div');
-        return Html::tag($tag, ($this->emptyText === null ? Yii::t('yii', 'No results found.') : $this->emptyText), $this->emptyTextOptions);
+        return Html::tag($tag, ($this->emptyText === null ? Yii::t('yii', '没有记录.') : $this->emptyText), $this->emptyTextOptions);
     }
 
     /**
@@ -177,7 +177,7 @@ abstract class BaseListView extends Widget
             $page = $pagination->getPage() + 1;
             $pageCount = $pagination->pageCount;
             if (($summaryContent = $this->summary) === null) {
-                return Html::tag($tag, Yii::t('yii', 'Showing <b>{begin, number}-{end, number}</b> of <b>{totalCount, number}</b> {totalCount, plural, one{item} other{items}}.', [
+                return Html::tag($tag, Yii::t('yii', '显示 <b>{begin, number}-{end, number}</b>, 共<b>{totalCount, number}</b> {totalCount, plural, one{条} other{条}}.', [
                         'begin' => $begin,
                         'end' => $end,
                         'count' => $count,

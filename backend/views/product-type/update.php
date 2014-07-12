@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\ProductType */
 
-$this->title = 'Update Product Type: ' . ' ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Product Types', 'url' => ['index']];
+$this->title = '修改产品类型: ' . ' ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => '产品类型', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="product-type-update">
 

@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Info */
 
-$this->title = 'Create Info';
-$this->params['breadcrumbs'][] = ['label' => 'Infos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '新建公司信息';
+$this->params['breadcrumbs'][] = ['label' => '公司信息', 'url' => ['index']];
+$this->params['breadcrumbs'][] = '新建';
 ?>
 <div class="info-create">
 

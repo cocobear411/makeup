@@ -44,7 +44,7 @@ class ProductType extends \yii\db\ActiveRecord
     {
         return [
             'id' => '产品类型ID',
-            'serial' => '序号',
+            'serial' => '排序',
             'type' => '类型',
             'create_time' => '创建时间',
             'update_time' => '更新时间',

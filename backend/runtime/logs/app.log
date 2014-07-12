@@ -1,1 +1,471 @@
-﻿
+﻿2014-07-12 12:01:17 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::id' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Component.php:142
+Stack trace:
+#0 C:\xampp\htdocs\makeup\backend\views\product\view.php(11): yii\base\Component->__get('id')
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\ProductController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\ProductController.php(53): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\controllers\ProductController->actionView('1')
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('view', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('product/view', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 12:01:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '63941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=1'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=product%2Fview&id=1'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159277.577
+    'REQUEST_TIME' => 1405159277
+]
+2014-07-12 12:08:32 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::confirm' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('confirm', 'Are you sure yo...')
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(482): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(226): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\makeup\backend\views\info\index.php(41): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\InfoController))
+#18 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('index', Array, Object(backend\controllers\InfoController))
+#19 C:\xampp\htdocs\makeup\backend\controllers\InfoController.php(41): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\InfoController->actionIndex()
+#21 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('info/index', Array)
+#25 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2014-07-12 12:08:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'info/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=agency%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '64473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=info%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=info%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159712.775
+    'REQUEST_TIME' => 1405159712
+]
+2014-07-12 12:08:40 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::confirm' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('confirm', 'Are you sure yo...')
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(482): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(226): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\makeup\backend\views\info\index.php(40): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\InfoController))
+#18 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('index', Array, Object(backend\controllers\InfoController))
+#19 C:\xampp\htdocs\makeup\backend\controllers\InfoController.php(41): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\InfoController->actionIndex()
+#21 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('info/index', Array)
+#25 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2014-07-12 12:08:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'info/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=agency%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '64478'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=info%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=info%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159720.459
+    'REQUEST_TIME' => 1405159720
+]
+2014-07-12 12:08:41 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::confirm' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('confirm', 'Are you sure yo...')
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(482): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(226): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\makeup\backend\views\info\index.php(40): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\InfoController))
+#18 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('index', Array, Object(backend\controllers\InfoController))
+#19 C:\xampp\htdocs\makeup\backend\controllers\InfoController.php(41): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\InfoController->actionIndex()
+#21 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('info/index', Array)
+#25 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2014-07-12 12:08:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'info/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=agency%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '64480'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=info%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=info%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159721.002
+    'REQUEST_TIME' => 1405159721
+]
+2014-07-12 12:09:12 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::data-confirm' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('data-confirm', 'Are you sure yo...')
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(482): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\grid\GridView.php(226): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Widget.php(95): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\makeup\backend\views\info\index.php(40): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\InfoController))
+#18 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('index', Array, Object(backend\controllers\InfoController))
+#19 C:\xampp\htdocs\makeup\backend\controllers\InfoController.php(41): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\InfoController->actionIndex()
+#21 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('info/index', Array)
+#25 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2014-07-12 12:09:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'info/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=agency%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '64507'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=info%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=info%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159752.696
+    'REQUEST_TIME' => 1405159752
+]
+2014-07-12 12:12:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in C:\xampp\htdocs\makeup\backend\views\agency\index.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-07-12 12:12:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'agency/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'm3gfvmm4s1fqoufj2k86hnu5d3'
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=m3gfvmm4s1fqoufj2k86hnu5d3; _csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '64591'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=agency%2Findex'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=agency%2Findex'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405159923.442
+    'REQUEST_TIME' => 1405159923
+]

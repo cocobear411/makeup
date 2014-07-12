@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\ProductType */
 
-$this->title = 'Create Product Type';
-$this->params['breadcrumbs'][] = ['label' => 'Product Types', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '新建产品类型';
+$this->params['breadcrumbs'][] = ['label' => '产品类型', 'url' => ['index']];
+$this->params['breadcrumbs'][] = '新建';
 ?>
 <div class="product-type-create">
 

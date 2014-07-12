@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\search\ProductTypeSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Product Types';
+$this->title = '产品类型';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-type-index">
@@ -16,10 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Product Type', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('新建产品类型', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
+//        'layout' => "{items}\n{pager}",
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
@@ -31,7 +32,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'create_time',
             'update_time',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class'    => 'yii\grid\ActionColumn',
+                'template' => '{view} {update} {delete}'
+            ],
         ],
     ]); ?>
 

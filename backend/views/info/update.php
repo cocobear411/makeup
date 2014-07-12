@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Info */
 
-$this->title = 'Update Info: ' . ' ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Infos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = '修改公司信息: ' . ' ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => '公司信息', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->tag, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="info-update">
 
