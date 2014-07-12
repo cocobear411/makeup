@@ -31,10 +31,10 @@ class Agency extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'image', 'create_time', 'update_time'], 'required'],
+            [['code', 'create_time', 'update_time'], 'required'],
             [['create_time', 'update_time'], 'safe'],
             [['code'], 'string', 'max' => 32],
-            [['image'], 'string', 'max' => 225]
+            [['image'], 'string', 'max' => 225],
         ];
     }
 

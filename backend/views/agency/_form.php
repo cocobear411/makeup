@@ -18,22 +18,33 @@ use kartik\widgets\FileInput;
     <?php
     if (!empty($model->image))
     {
-        $model->image = "../../upload/" . $model->image;
-        $imginfo = Html::img("{$model->image}", ['class'=>'file-preview-image', 'alt'=>'Images', 'title'=>'Images']); 
+//        echo "ok";exit;
+//        $model->image = "../../upload/" . $model->image;
+        Yii::$app->request->setBaseUrl("../../upload");
+        $imginfo = Html::img("{$model->image}", ['class' => 'file-preview-image', 'alt' => 'Images', 'title' => 'Images']);
     }
-
+        
     echo $form->field($model, 'image')->widget(FileInput::classname(), [
-        'options'       => ['accept' => 'image/*'],
+        'options'       => ['accept' => 'image/*',],
         'pluginOptions' => [
-            'initialPreview' => isset($imginfo) ? $imginfo : "",
-            'initialCaption' => "你上传的图像"
+            'initialPreview'   => isset($imginfo) ? $imginfo : "",
+            'initialCaption'   => '你上传的图像',
+            'showRemove'       => false,
+            'showPreview'      => true,
+            'showCaption'      => true,
+            'showUpload'       => false,
+            'overwriteInitial' => true,
         ],
     ]);
     ?>
 
-    <?= $form->field($model, 'create_time')->textInput() ?>
 
-    <?= $form->field($model, 'update_time')->textInput() ?>
+
+    <?= Html::activeHiddenInput($model, 'create_time', ['value' => date('Y-m-d H:i:s')]) ?>
+    <?php // $form->field($model, 'create_time')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>
+
+    <?= Html::activeHiddenInput($model, 'update_time', ['value' => date('Y-m-d H:i:s')]) ?>
+    <?php // $form->field($model, 'update_time')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

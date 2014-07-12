@@ -71,15 +71,17 @@ class AgencyController extends Controller
             if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
             {
                 $model->image = Agency::saveImage($imageUploadFile, 565, 800);
-            }
 
-            $model->create_time = date('Y-m-d H:i:s');
-            $model->update_time = date('Y-m-d H:i:s');
-
-            if ($model->save())
-            {
-                return $this->redirect(['view', 'id' => $model->id]);
+                if ($model->save())
+                {
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
             }
+        }
+
+        if (Yii::$app->request->isPost)
+        {
+            $model->addError('image', "请上传图片");
         }
 
         return $this->render('create', [
@@ -95,18 +97,34 @@ class AgencyController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
+        $model    = $this->findModel($id);
+        $oldImage = $model->image;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save())
+        if ($model->load(Yii::$app->request->post()))
         {
-            return $this->redirect(['view', 'id' => $model->id]);
+            var_dump(Yii::$app->request->post());
+
+            $imageUploadFile = UploadedFile::getInstance($model, 'image');
+
+            if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
+            {
+                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+            }
+
+            if ($model->image == NULL)  //Bug
+            {
+                $model->image = $oldImage;
+            }
+
+            if ($model->save())
+            {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
-        else
-        {
-            return $this->render('update', [
-                    'model' => $model,
-            ]);
-        }
+
+        return $this->render('update', [
+                'model' => $model,
+        ]);
     }
 
     /**
