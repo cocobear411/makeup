@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Info */

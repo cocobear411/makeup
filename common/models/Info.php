@@ -43,7 +43,7 @@ class Info extends \yii\db\ActiveRecord
         return [
             'id' => '信息ID',
             'tag' => '描述',
-            'value' => '值',
+            'value' => '详细',
             'create_time' => '创建时间',
             'update_time' => '更新时间',
         ];

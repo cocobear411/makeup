@@ -8,17 +8,19 @@ use common\models\search\AgencySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * AgencyController implements the CRUD actions for Agency model.
  */
 class AgencyController extends Controller
 {
+
     public function behaviors()
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class'   => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
@@ -32,12 +34,12 @@ class AgencyController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new AgencySearch();
+        $searchModel  = new AgencySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+                'searchModel'  => $searchModel,
+                'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -49,7 +51,7 @@ class AgencyController extends Controller
     public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+                'model' => $this->findModel($id),
         ]);
     }
 
@@ -62,13 +64,27 @@ class AgencyController extends Controller
     {
         $model = new Agency();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        if ($model->load(Yii::$app->request->post()))
+        {
+            $imageUploadFile = UploadedFile::getInstance($model, 'image');
+
+            if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
+            {
+                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+            }
+
+            $model->create_time = date('Y-m-d H:i:s');
+            $model->update_time = date('Y-m-d H:i:s');
+
+            if ($model->save())
+            {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
+
+        return $this->render('create', [
+                'model' => $model,
+        ]);
     }
 
     /**
@@ -81,11 +97,14 @@ class AgencyController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save())
+        {
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
+        }
+        else
+        {
             return $this->render('update', [
-                'model' => $model,
+                    'model' => $model,
             ]);
         }
     }
@@ -112,10 +131,14 @@ class AgencyController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Agency::findOne($id)) !== null) {
+        if (($model = Agency::findOne($id)) !== null)
+        {
             return $model;
-        } else {
+        }
+        else
+        {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }
