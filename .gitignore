@@ -1,2 +1,4 @@
-*.data
+\backend\runtime\**
+\frontend\runtime\**
 \backend\web\assets\**
+\frontend\web\assets\**
