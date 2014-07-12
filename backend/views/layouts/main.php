@@ -26,7 +26,7 @@ AppAsset::register($this);
         <div class="wrap">
             <?php
             NavBar::begin([
-                'brandLabel' => '公司',
+                'brandLabel' => '思弗迩',
                 'brandUrl'   => Yii::$app->homeUrl,
                 'options'    => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -43,11 +43,13 @@ AppAsset::register($this);
             else
             {
                 $menuItems[] = ['label' => '公司信息', 'url' => ['info/index']];
+                $menuItems[] = ['label' => '公司图片', 'url' => ['image/index']];
                 $menuItems[] = ['label' => '产品信息', 'url' => ['product/index']];
                 $menuItems[] = ['label' => '产品类型', 'url' => ['product-type/index']];
                 $menuItems[] = ['label' => '美容讲堂', 'url' => ['article/index']];
                 $menuItems[] = ['label' => '代理信息', 'url' => ['agency/index']];
 
+                $menuItems[] = ['label' => '修改密码', 'url' => ['site/change-password']];
                 $menuItems[] = [
                     'label'       => '注销 (' . Yii::$app->user->identity->username . ')',
                     'url'         => ['/site/logout'],
@@ -73,8 +75,8 @@ AppAsset::register($this);
 
         <footer class="footer">
             <div class="container">
-                <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-                <p class="pull-right"><?= Yii::powered() ?></p>
+                <p class="pull-left">&copy; 思弗迩 <?= date('Y') ?></p>
+                <!--<p class="pull-right"><?php //echo Yii::powered() ?></p>-->
             </div>
         </footer>
 

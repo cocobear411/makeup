@@ -841,3 +841,1085 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1405162126.722
     'REQUEST_TIME' => 1405162126
 ]
+2014-07-12 20:06:18 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php:150
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php(133): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Component.php(546): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(254): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php(107): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2014-07-12 20:06:18 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '407miaqskaf4i0qphk6clrv0f7'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=407miaqskaf4i0qphk6clrv0f7; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '54623'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405166778.771
+    'REQUEST_TIME' => 1405166778
+]
+2014-07-12 20:06:46 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php:150
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php(133): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Component.php(546): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(254): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php(107): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2014-07-12 20:06:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '407miaqskaf4i0qphk6clrv0f7'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=407miaqskaf4i0qphk6clrv0f7; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '54639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405166806.205
+    'REQUEST_TIME' => 1405166806
+]
+2014-07-12 20:06:46 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php:150
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\filters\AccessControl.php(133): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Component.php(546): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(254): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php(107): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2014-07-12 20:06:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '407miaqskaf4i0qphk6clrv0f7'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=info%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=407miaqskaf4i0qphk6clrv0f7; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '54639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405166806.703
+    'REQUEST_TIME' => 1405166806
+]
+2014-07-12 20:39:10 [::1][1][d9it1mmip57mddaq73fkv5ql31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\xampp\htdocs\makeup\backend\views\site\change_password.php:20
+Stack trace:
+#0 C:\xampp\htdocs\makeup\backend\views\site\change_password.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Array, Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(92): yii\base\Controller->render('change_password')
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 20:39:10 [::1][1][d9it1mmip57mddaq73fkv5ql31][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => 'd9it1mmip57mddaq73fkv5ql31'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=d9it1mmip57mddaq73fkv5ql31; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '55318'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405168750.596
+    'REQUEST_TIME' => 1405168750
+]
+2014-07-12 21:13:21 [::1][1][3u8k389ar7anpoofan5tiiqlp3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\ChangePassword' not found' in C:\xampp\htdocs\makeup\backend\controllers\SiteController.php:99
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-07-12 21:13:21 [::1][1][3u8k389ar7anpoofan5tiiqlp3][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '57661'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405170801.893
+    'REQUEST_TIME' => 1405170801
+]
+2014-07-12 21:13:55 [::1][1][3u8k389ar7anpoofan5tiiqlp3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\ChangePassword' not found' in C:\xampp\htdocs\makeup\backend\controllers\SiteController.php:99
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-07-12 21:13:55 [::1][1][3u8k389ar7anpoofan5tiiqlp3][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '57679'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405170835.683
+    'REQUEST_TIME' => 1405170835
+]
+2014-07-12 21:14:08 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:14:08 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '57685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405170848.205
+    'REQUEST_TIME' => 1405170848
+]
+2014-07-12 21:17:48 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:17:48 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '57856'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405171068.451
+    'REQUEST_TIME' => 1405171068
+]
+2014-07-12 21:40:04 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:40:03 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405172403.955
+    'REQUEST_TIME' => 1405172403
+]
+2014-07-12 21:43:38 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:43:38 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405172618.493
+    'REQUEST_TIME' => 1405172618
+]
+2014-07-12 21:43:47 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:43:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405172626.953
+    'REQUEST_TIME' => 1405172626
+]
+2014-07-12 21:43:49 [::1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, object given' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php:314
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(314): extract(Object(common\models\ChangePasswordForm), 0)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm))
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Object(common\models\ChangePasswordForm), Object(backend\controllers\SiteController))
+#5 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Object(common\models\ChangePasswordForm))
+#6 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2014-07-12 21:43:49 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405172629.422
+    'REQUEST_TIME' => 1405172629
+]
+2014-07-12 21:47:36 [::1][1][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unknown validator: 'equal'.' 
+
+in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\validators\Validator.php:204
+
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Model.php(423): yii\validators\Validator::createValidator('equal', Object(common\models\ChangePasswordForm), Array, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Model.php(385): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Model.php(183): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Model.php(713): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\widgets\ActiveField.php(686): yii\base\Model->activeAttributes()
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\widgets\ActiveField.php(196): yii\widgets\ActiveField->getClientOptions()
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\widgets\ActiveField.php(187): yii\widgets\ActiveField->begin()
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\widgets\ActiveField.php(143): yii\widgets\ActiveField->render()
+#8 C:\xampp\htdocs\makeup\backend\views\site\change_password.php(20): yii\widgets\ActiveField->__toString()
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Array, Object(backend\controllers\SiteController))
+#13 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Array)
+#14 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#15 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#18 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#19 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#21 {main}' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\ErrorHandler.php:231
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Inva...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\ErrorHandler.php(231): trigger_error('Exception (Inva...', 256)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\widgets\ActiveField.php(145): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#3 C:\xampp\htdocs\makeup\backend\views\site\change_password.php(20): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(315): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#7 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(362): yii\base\View->render('change_password', Array, Object(backend\controllers\SiteController))
+#8 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(106): yii\base\Controller->render('change_password', Array)
+#9 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#13 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#14 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\makeup\backend\views\site\change_password.php:20
+    in C:\xampp\htdocs\makeup\backend\controllers\SiteController.php:106
+2014-07-12 21:47:36 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58987'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405172856.41
+    'REQUEST_TIME' => 1405172856
+]
+2014-07-12 21:55:46 [::1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\ChangePasswordForm::password' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Component.php:142
+Stack trace:
+#0 C:\xampp\htdocs\makeup\common\models\ChangePasswordForm.php(52): yii\base\Component->__get('password')
+#1 [internal function]: common\models\ChangePasswordForm->validatePassword('currentPassword', NULL)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\validators\InlineValidator.php(66): call_user_func(Array, 'currentPassword', NULL)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\validators\Validator.php(244): yii\validators\InlineValidator->validateAttribute(Object(common\models\ChangePasswordForm), 'currentPassword')
+#4 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Model.php(332): yii\validators\Validator->validateAttributes(Object(common\models\ChangePasswordForm), Array)
+#5 C:\xampp\htdocs\makeup\common\models\ChangePasswordForm.php(88): yii\base\Model->validate()
+#6 C:\xampp\htdocs\makeup\backend\controllers\SiteController.php(100): common\models\ChangePasswordForm->changePassword()
+#7 [internal function]: backend\controllers\SiteController->actionChangePassword()
+#8 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\InlineAction.php(54): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('change-password', Array)
+#11 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('site/change-pas...', Array)
+#12 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2014-07-12 21:55:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'site/change-password'
+]
+
+$_POST = [
+    '_csrf' => 'MTNCYVg2TmNoZzYKNVAqL1NaMBIKUToVUlYWJD8DIQF1RBAqHQR8LQ=='
+    'ChangePasswordForm' => [
+        'currentPassword' => 'admin'
+        'newPassword' => 'admin'
+        'newPasswordRepeat' => 'admin'
+    ]
+    'change-password-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s:32:\"YTtkmfdLbirsRgtvceTEg5obDwRKE22N\";'
+    'PHPSESSID' => '3u8k389ar7anpoofan5tiiqlp3'
+    '_identity' => '736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '226'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.27 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c604e99bcdad54c43a4c8f9169950df62016bdad384fa1155556c43608981cc1s%3A32%3A%22YTtkmfdLbirsRgtvceTEg5obDwRKE22N%22%3B; PHPSESSID=3u8k389ar7anpoofan5tiiqlp3; _identity=736f952ec9210775e6aa585303d977c80ce1ccec175a8af155d7909693bf0009s%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '59361'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fchange-password'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=site%2Fchange-password'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1405173346.565
+    'REQUEST_TIME' => 1405173346
+]
