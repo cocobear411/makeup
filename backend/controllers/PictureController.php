@@ -68,7 +68,7 @@ class PictureController extends Controller
 //        var_dump(Yii::$app->request->post());
 //        exit;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save())
+        if ($model->load(Yii::$app->request->post()))
         {
             $imageUploadFile = UploadedFile::getInstance($model, 'image');
 
@@ -80,21 +80,17 @@ class PictureController extends Controller
                 {
                     return $this->redirect(['view', 'id' => $model->id]);
                 }
-                else
-                {
-                    exit;
-                }
             }
             else
             {
-                exit;
+                $model->addError('image', "请上传图片");
             }
         }
 
-//        if (Yii::$app->request->isPost)
-//        {
-//            $model->addError('image', "请上传图片");
-//        }
+        if (Yii::$app->request->isPost)
+        {
+            
+        }
 
         return $this->render('create', [
                 'model' => $model,
@@ -119,8 +115,7 @@ class PictureController extends Controller
             {
                 $model->image = Agency::saveImage($imageUploadFile, 565, 800);
             }
-
-            if ($model->image == NULL)  //Bug
+            else
             {
                 $model->image = $oldImage;
             }

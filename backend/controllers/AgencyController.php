@@ -77,11 +77,10 @@ class AgencyController extends Controller
                     return $this->redirect(['view', 'id' => $model->id]);
                 }
             }
-        }
-
-        if (Yii::$app->request->isPost)
-        {
-            $model->addError('image', "请上传图片");
+            else
+            {
+                $model->addError('image', "请上传图片");
+            }
         }
 
         return $this->render('create', [
@@ -108,8 +107,7 @@ class AgencyController extends Controller
             {
                 $model->image = Agency::saveImage($imageUploadFile, 565, 800);
             }
-
-            if ($model->image == NULL)  //Bug
+            else
             {
                 $model->image = $oldImage;
             }
