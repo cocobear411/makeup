@@ -41,7 +41,7 @@ class Info extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '信息ID',
+            'id' => '公司信息ID',
             'tag' => '描述',
             'value' => '详细',
             'create_time' => '创建时间',

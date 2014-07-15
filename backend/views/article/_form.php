@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use bamboo\ueditor\Ueditor;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Article */
@@ -14,7 +15,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+    <?=
+    $form->field($model, 'content')->widget(Ueditor::classname(), [
+        'options' => ['style' => "height:500px;"]
+    ]);
+    ?>
+    
+    <?php //$form->field($model, 'content')->textarea(['rows' => 6]) ?>
     
     <?= Html::activeHiddenInput($model, 'create_time', ['value' => date('Y-m-d H:i:s')]) ?>
     <?php // $form->field($model, 'create_time')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>

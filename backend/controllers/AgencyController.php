@@ -70,7 +70,7 @@ class AgencyController extends Controller
 
             if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
             {
-                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+                $model->image = Agency::saveImage($imageUploadFile);
 
                 if ($model->save())
                 {
@@ -105,7 +105,7 @@ class AgencyController extends Controller
 
             if ($imageUploadFile !== null && $imageUploadFile->tempName != null)
             {
-                $model->image = Agency::saveImage($imageUploadFile, 565, 800);
+                $model->image = Agency::saveImage($imageUploadFile);
             }
             else
             {

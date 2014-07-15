@@ -44,7 +44,7 @@ class Agency extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id'          => '用户ID',
+            'id'          => '代理信息ID',
             'code'        => '证书编号',
             'image'       => '证书图片',
             'create_time' => '创建时间',
@@ -52,7 +52,7 @@ class Agency extends \yii\db\ActiveRecord
         ];
     }
 
-    public function saveImage($imageUploadInstance, $width, $height)
+    public function saveImage($imageUploadInstance)
     {
         if ($imageUploadInstance == null)
         {
@@ -76,7 +76,7 @@ class Agency extends \yii\db\ActiveRecord
 
         $imageUploadInstance->saveAs($save_path);
 
-        Image::thumbnail($save_path, $width, $height)->save($save_path);
+//        Image::thumbnail($save_path, $width, $height)->save($save_path);
 
         return $ymd . '/' . $imageFileName;
     }

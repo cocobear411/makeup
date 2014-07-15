@@ -42,7 +42,7 @@ class Picture extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '图片ID',
+            'id' => '公司图片ID',
             'tag' => '描述',
             'image' => '图片',
             'create_time' => '创建时间',

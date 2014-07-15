@@ -16,4 +16,5 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'kartik\\' => array($vendorDir . '/kartik-v/yii2-field-range', $vendorDir . '/kartik-v/dependent-dropdown', $vendorDir . '/kartik-v/yii2-widgets', $vendorDir . '/kartik-v/bootstrap-fileinput', $vendorDir . '/kartik-v/bootstrap-star-rating'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+	'bamboo\\ueditor\\' => array($vendorDir . '/bamboo/yii2-ueditor'),
 );

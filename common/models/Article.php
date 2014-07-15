@@ -42,7 +42,7 @@ class Article extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '文章ID',
+            'id' => '美容讲堂ID',
             'title' => '标题',
             'content' => '内容',
             'create_time' => '创建时间',

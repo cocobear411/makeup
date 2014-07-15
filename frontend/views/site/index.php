@@ -1,51 +1,42 @@
 <?php
-/* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$basePath = '../../upload/';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+<div class="header">
+    <div class="header_l left">
+        <img src="<?= $basePath . $picture['upLeft']->image ?>" width="470" height="97">
     </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
+    <div class="header_r right">
+        <img src="<?= $basePath . $picture['upRight']->image ?>" width="295" height="97">
     </div>
 </div>
+
+<!--header end -->
+<div class="nav">
+    <ul>
+        <li><a href="">品牌首页</a></li>
+        <li><a href="index.php?r=site/product">产品介绍</a></li>
+        <li><a href="index.php?r=site/article">美容讲堂</a></li>
+        <li><a href="index.php?r=site/agency">代理查询</a></li>
+        <li><a href="index.php?r=site/company">公司简介</a></li>
+    </ul>
+</div><!--nav end -->
+
+<div class="in_focus"><img src="<?= $basePath . $picture['middle']->image ?>" width="980" height="440"></div><!--in_focus end -->
+<div class="in_picwrap">
+    <div class="in_picwrap_l left"><img src="<?= $basePath . $picture['downLeft']->image ?>" width="322" height="150"></div>
+    <div class="in_picwrap_c left"><img src="<?= $basePath . $picture['downMiddel']->image ?>" width="322" height="150"></div>
+    <div class="in_picwrap_r right"><img src="<?= $basePath . $picture['downRight']->image ?>" width="322" height="150"></div>
+    <image src="./image/footerbg.png">
+</div><!--in_picwrap end -->
+
+<div class="footer">
+    <a href="http://www.eceiro.com/index.html#">客户服务</a>
+    <a href="http://www.eceiro.com/index.html#">在线客服</a>
+    <a href="http://www.eceiro.com/index.html#">常见问题</a>
+    <a href="http://www.eceiro.com/index.html#">联系我们</a>
+    <a href="http://www.eceiro.com/index.html#">网站地图</a>
+    <a href="http://www.eceiro.com/index.html#">隐私条款</a>
+    <a href="http://www.eceiro.com/index.html#">条款条件</a>
+</div>
+<!--footer end -->

@@ -18,8 +18,6 @@ use kartik\widgets\FileInput;
     <?php
     if (!empty($model->image))
     {
-//        echo "ok";exit;
-//        $model->image = "../../upload/" . $model->image;
         Yii::$app->request->setBaseUrl("../../upload");
         $imginfo = Html::img("{$model->image}", ['class' => 'file-preview-image', 'alt' => 'Images', 'title' => 'Images']);
     }

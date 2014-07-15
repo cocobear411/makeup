@@ -75,4 +75,13 @@ return array (
       '@yii/imagine' => $vendorDir . '/yiisoft/yii2-imagine',
     ),
   ),
+  'yii2-ueditor' => 
+  array (
+    'name' => 'yii2-ueditor',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@bamboo' => $vendorDir . '/bamboo/yii2-ueditor',
+    ),
+  ),
 );
