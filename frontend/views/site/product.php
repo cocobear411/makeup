@@ -1,8 +1,9 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+$basePath = "../../upload/";
+foreach ($products as $product) :
+?>
+    <div class="in_picwrap">
+        <h2><?= $product->name ?></h2>
+        <img src="<?= $basePath . $product->image ?>">
+    </div>
+<?php endforeach; ?>

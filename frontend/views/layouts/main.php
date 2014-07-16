@@ -51,7 +51,7 @@ AppAsset::register($this);
                             $productTypes = ProductType::find()->orderBy('serial')->all();
                             foreach($productTypes as $productType) :
                             ?>
-                            <li><a href="<?php echo "index.php?r=site/product&id={$productType->id}" ?>"><?php echo $productType->type; ?></a></li>
+                            <li><a href="<?php echo "index.php?r=site/product&type={$productType->type}" ?>"><?php echo $productType->type; ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </div> 

@@ -16,6 +16,7 @@ use yii\filters\AccessControl;
 use common\models\Picture;
 use common\models\Agency;
 use common\models\Info;
+use common\models\Product;
 
 /**
  * Site controller
@@ -78,9 +79,10 @@ class SiteController extends Controller
         return $this->render('company', ['company' => $company]);
     }
 
-    public function actionProduct($id)
+    public function actionProduct($type)
     {
-        return $this->render('product');
+        $products = Product::find()->where(['type' => $type])->all();
+        return $this->render('product', ['products' => $products]);
     }
 
     public function actionArticle()
