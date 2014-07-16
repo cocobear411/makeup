@@ -275,7 +275,7 @@ input:-webkit-autofill{
 }
 
 .login-form div{
-    border:1px solid #e7e7eb;
+    /*border:1px solid #e7e7eb;*/
     padding:3px 0
 }
 
@@ -314,6 +314,10 @@ input:-webkit-autofill{
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
     text-align:center
+}
+
+.login-un{
+    border: 1px solid #e7e7eb;
 }
 
 .qrcode-panel img{
