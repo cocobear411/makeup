@@ -15,6 +15,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\Picture;
 use common\models\Agency;
+use common\models\Info;
 
 /**
  * Site controller
@@ -67,7 +68,14 @@ class SiteController extends Controller
 
     public function actionCompany()
     {
-        return $this->render('company');
+        $company = "";
+        $model = Info::findOne(['tag' => '公司介绍']);
+        if($model)
+        {
+            $company = $model->value;
+        }
+        
+        return $this->render('company', ['company' => $company]);
     }
 
     public function actionProduct()

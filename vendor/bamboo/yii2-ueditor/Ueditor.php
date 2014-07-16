@@ -23,13 +23,13 @@ class Ueditor extends InputWidget
     public $UEDITOR_HOME_URL = '/';
     private $_base_url;
     private $_js;
-    private $_editor_id;
+    public $_editor_id;
     private $asset;
 
     public function init()
     {
         parent::init();
-        $this->_editor_id = "article-content";
+//        $this->_editor_id = "article-content";
         $this->asset = UeditorAsset::register($this->getView());
         $this->renderInput();
         $this->genarateJs();

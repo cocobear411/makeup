@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\widgets\FileInput;
+use bamboo\ueditor\Ueditor;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Info */
@@ -15,7 +15,16 @@ use kartik\widgets\FileInput;
 
     <?= $form->field($model, 'tag')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'value')->textInput(['maxlength' => 255]) ?>
+    <?php
+//    echo $form->field($model, 'value')->textInput(['maxlength' => 255]);
+    echo $form->field($model, 'value')->widget(Ueditor::classname(), [
+        'options' => [
+            'style'              => "height:500px;",
+        ],
+        '_editor_id' => 'info-value',
+    ]);
+    
+    ?>
 
     <?= Html::activeHiddenInput($model, 'create_time', ['value' => date('Y-m-d H:i:s')]) ?>
     <?php // $form->field($model, 'create_time')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>

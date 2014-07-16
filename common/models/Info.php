@@ -31,7 +31,7 @@ class Info extends \yii\db\ActiveRecord
         return [
             [['tag', 'value', 'create_time', 'update_time'], 'required'],
             [['create_time', 'update_time'], 'safe'],
-            [['tag', 'value'], 'string', 'max' => 255]
+            [['tag'], 'string', 'max' => 255]
         ];
     }
 
