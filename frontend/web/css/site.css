@@ -51,8 +51,21 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .passage {
     width:980px;
     margin:0px auto;
-    border-bottom:#b28850 2px solid;
-    text-decoration:none;}
+    /*border-bottom:#b28850 2px solid;*/
+    text-decoration:none;
+    text-align:left; 
+    windows:2;
+    text-transform:none;
+    text-indent:10px;
+    font:15px/28px'Hiragino sans GB W3', 'Hiragino sans GB', Arial, Helvetica, simsun, u5b8bu4f53;
+    white-space:pre-line;
+    orphans:2;
+    letter-spacing:normal;
+    color: rgb(106,103,84);
+    word-spacing:0px;
+    -webkit-text-size-adjust: auto;
+    -webkit-text-stroke-width: 0px;
+}
 
 
 
@@ -135,7 +148,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .in_picwrap{
     width:980px;
     margin:0px auto;
-    border-bottom:#b28850 1px solid;
+    /*border-bottom:#b28850 1px solid;*/
 }
 .in_picwrap_l,.in_picwrap_c,.in_picwrap_r{ width:322px; height:150px;}
 .in_picwrap_l,.in_picwrap_c{ margin-right:7px;}
@@ -209,17 +222,17 @@ input:-webkit-autofill{
 
 
 .login-panel{
-    position:absolute;
+    /*position:absolute;*/
     top:320px;
     right:250;
-    padding:25px 35px 20px;
-    border-radius:2px;
-    -moz-border-radius:2px;
-    -webkit-border-radius:2px;
-    box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-    -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-    -webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-    background-color:#FFF
+    padding:45px 35px 20px;
+    /*    border-radius:2px;
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+        -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+        -webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+        background-color:#FFF*/
 }
 
 .login-panel h3{
@@ -307,15 +320,15 @@ input:-webkit-autofill{
     width:102px
 }
 
-
-
-
-
-
 .footer{
+    width:980px;
+    margin:0px auto;
     margin-top:3px;
     padding:15px 0px 50px 0px;
-    text-align:center;}
+    text-align:center;
+        border-top:#b28850 1px solid;
+
+}
 .footer a:link,.footer a:visited{
     text-decoration:none; color:#000;
     font-family:"宋体";
@@ -323,6 +336,10 @@ input:-webkit-autofill{
     margin:0px 7px;}
 .footer a:hover{ text-decoration:underline;}
 
+.copyright{
+    font-family: "Microsoft YaHei";
+    color: grey;
+}
 
 /*尖端护肤*/
 .jdhf{ width:980px; margin:0px auto;}

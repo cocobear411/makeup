@@ -33,21 +33,21 @@ class SiteController extends Controller
     
     public function actionCompany()
     {
-        echo "Company";
+        return $this->render('company');
     }
     
     public function actionProduct()
     {
-        echo "Product";
+        return $this->render('product');
     }
     
     public function actionArticle()
     {
-        echo "Article";
+        return $this->render('article');
     }
     
     public function actionAgency()
     {
-        echo "Agency";
+        return $this->render('agency');
     }
 }
