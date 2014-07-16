@@ -7,6 +7,7 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
 use common\models\Picture;
+use common\models\ProductType;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -46,8 +47,12 @@ AppAsset::register($this);
                     <!-- hiddenDiv start -->
                     <div class="hiddenDiv" id="hiddenDiv" onmouseover="showMenu('hiddenDiv', 'over');" onmouseout="showMenu('hiddenDiv', 'out');">
                         <ul>
-                            <li><a href="">面膜</a></li>
-                            <li><a href="">精华乳</a></li>
+                            <?php
+                            $productTypes = ProductType::find()->orderBy('serial')->all();
+                            foreach($productTypes as $productType) :
+                            ?>
+                            <li><a href="<?php echo "index.php?r=site/product&id={$productType->id}" ?>"><?php echo $productType->type; ?></a></li>
+                            <?php endforeach ?>
                         </ul>
                     </div> 
                     <!-- hiddenDiv end -->

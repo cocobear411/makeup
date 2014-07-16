@@ -78,7 +78,7 @@ class SiteController extends Controller
         return $this->render('company', ['company' => $company]);
     }
 
-    public function actionProduct()
+    public function actionProduct($id)
     {
         return $this->render('product');
     }
