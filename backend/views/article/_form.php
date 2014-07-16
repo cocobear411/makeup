@@ -17,12 +17,14 @@ use bamboo\ueditor\Ueditor;
 
     <?=
     $form->field($model, 'content')->widget(Ueditor::classname(), [
-        'options' => ['style' => "height:500px;"]
+        'options' => [
+            'style'              => "height:500px;",
+        ],
     ]);
     ?>
-    
+
     <?php //$form->field($model, 'content')->textarea(['rows' => 6]) ?>
-    
+
     <?= Html::activeHiddenInput($model, 'create_time', ['value' => date('Y-m-d H:i:s')]) ?>
     <?php // $form->field($model, 'create_time')->hiddenInput(['value' => date('Y-m-d H:i:s')]) ?>
 

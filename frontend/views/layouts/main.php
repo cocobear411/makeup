@@ -5,10 +5,11 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
+use common\models\Picture;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
+$basePath = '../../upload/';
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -23,53 +24,55 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
-//            NavBar::begin([
-//                'brandLabel' => 'My Company',
-//                'brandUrl' => Yii::$app->homeUrl,
-//                'options' => [
-//                    'class' => 'navbar-inverse navbar-fixed-top',
-//                ],
-//            ]);
-//            $menuItems = [
-//                ['label' => 'Home', 'url' => ['/site/index']],
-//                ['label' => 'About', 'url' => ['/site/about']],
-//                ['label' => 'Contact', 'url' => ['/site/contact']],
-//            ];
-//            if (Yii::$app->user->isGuest) {
-//                $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-//                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-//            } else {
-//                $menuItems[] = [
-//                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-//                    'url' => ['/site/logout'],
-//                    'linkOptions' => ['data-method' => 'post']
-//                ];
-//            }
-//            echo Nav::widget([
-//                'options' => ['class' => 'navbar-nav navbar-right'],
-//                'items' => $menuItems,
-//            ]);
-//            NavBar::end();
-        ?>
-
-        <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+       
+    <!--header start -->
+    <div class="header">
+        <div class="header_l left">
+            <img src="<?= $basePath . Picture::findOne(['tag' => '上左'])->image ?>" width="270" height="180">
+        </div>
+        <div class="header_r right">
+            <img src="<?= $basePath . Picture::findOne(['tag' => '上右'])->image ?>" width="270" height="180">
         </div>
     </div>
+    <!--header end -->
 
-<!--    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>-->
+    <!--nav start -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.php?r=site/index">品牌首页</a></li>
+            <li><a href="index.php?r=site/company">公司介绍</a></li>
+            <li><a href="" onmouseover="showMenu('hiddenDiv', 'over');" onmouseout="showMenu('hiddenDiv', 'out');">产品介绍</a>
 
+                <!-- hiddenDiv start -->
+                <div class="hiddenDiv" id="hiddenDiv" onmouseover="showMenu('hiddenDiv', 'over');" onmouseout="showMenu('hiddenDiv', 'out');">
+                    <ul>
+                        <li><a href="">面膜</a></li>
+                        <li><a href="">精华乳</a></li>
+                    </ul>
+                </div> 
+                <!-- hiddenDiv end -->
+
+            </li> 
+            <li><a href="index.php?r=site/agency">代理查询</a></li>
+            <li><a href="index.php?r=site/article">美容讲堂</a></li>
+        </ul>
+    </div>
+    <!--nav end -->
+
+        <?= $content ?>
+
+    <!--footer start -->
+    <div class="footer">
+<!--        <a href="">客户服务</a>
+        <a href="">在线客服</a>
+        <a href="">常见问题</a>
+        <a href="">联系我们</a>
+        <a href="">网站地图</a>
+        <a href="">隐私条款</a>
+        <a href="">条款条件</a>-->
+    </div>
+    <!--footer end -->
+    
     <?php $this->endBody() ?>
 </body>
 </html>

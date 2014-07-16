@@ -35,6 +35,7 @@ class Ueditor extends InputWidget
         $this->genarateJs();
        
         $this->view->registerJs($this->_js);
+        
     }
 
     public function run()
@@ -97,7 +98,7 @@ EOP;
      */
     private function _getDefaultSetting()
     {
-        $_imgUrl  = "http://football.ztgame.com";
+        $_imgUrl  = "http://localhost/makeup";
         return array(
             'initialFrameWidth'       => '100%', //默认宽度
             'wordCount'               => true, //统计字数

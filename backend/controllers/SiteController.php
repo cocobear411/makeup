@@ -8,6 +8,7 @@ use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use common\models\ChangePasswordForm;
+use bamboo\ueditor\UFunction;
 
 /**
  * Site controller
@@ -25,11 +26,11 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error', 'change-password'],
+                        'actions' => ['login', 'error', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup'],
                         'allow'   => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index', 'change-password', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup'],
                         'allow'   => true,
                         'roles'   => ['@'],
                     ],
@@ -38,7 +39,13 @@ class SiteController extends Controller
             'verbs'  => [
                 'class'   => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+                    'logout'      => ['post'],
+                    'uploadimg'   => ['post'],
+                    'backimg'     => ['post'],
+                    'scrawup'     => ['post'],
+                    'getmovie'    => ['post'],
+                    'remoteimage' => ['post'],
+                    'fileup'      => ['post'],
                 ],
             ],
         ];
@@ -105,6 +112,59 @@ class SiteController extends Controller
         {
             return $this->render('change_password', ['model' => $model]);
         }
+    }
+
+    /**
+     * Ueditor 附件上传
+     */
+    public function actionFileup()
+    {
+        UFunction::FileUpload('file');
+        exit;
+    }
+
+    /**
+     * UEditor远程图片抓取
+     */
+    public function actionRemoteimage()
+    {
+        UFunction::getRemoteImage($uri, $config);
+        exit;
+    }
+
+    /**
+     * UEditor 获取视频列表
+     */
+    public function actionGetmovie()
+    {
+        UFunction::GetMovie();
+        exit;
+    }
+
+    /**
+     * UEditor 涂鸦板
+     */
+    public function actionScrawup()
+    {
+        UFunction::scrawUp();
+        exit;
+    }
+
+    /**
+     * Ueditor 获取图片列表
+     */
+    public function actionBackimg()
+    {
+        UFunction::backList();
+//        exit;
+    }
+
+    /**
+     * 图片上传方法
+     */
+    public function actionUploadimg()
+    {
+        UFunction::FileUpload();
     }
 
 }
