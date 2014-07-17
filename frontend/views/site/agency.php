@@ -30,11 +30,16 @@ $basePath = "../../upload/";
             <?php ActiveForm::end(); ?>
         </div>
     </div>
+    
+    
     <?php
-    if (empty($image)) :
+    if (empty($model)) :
     ?>
     <?php else : ?>
-        <img src="<?= $basePath . $image; ?>">
+    
+    <div class="agency-image">
+        <a class="image-link" href="<?= $basePath . $model->image; ?>" data-lightbox="<?= $model->code ?>" data-title="<?= $model->code ?>"><img src="<?= $basePath . $model->image; ?>" width="300" height="400"></a>
+    </div>
     <?php endif ?>
 </div>
 <!--wrapper end -->

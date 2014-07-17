@@ -94,19 +94,13 @@ class SiteController extends Controller
     {
         if (\Yii::$app->request->isPost)
         {
-            $image = "";
-
             $model = Agency::findOne(['code' => \Yii::$app->request->post()['code']]);
-            if ($model)
-            {
-                $image = $model->image;
-            }
-            else
+            if (!$model)
             {
                 echo "<script>alert('代理信息不存在！');</script>";
             }
 
-            return $this->render('agency', ['image' => $image]);
+            return $this->render('agency', ['model' => $model]);
         }
 
         return $this->render('agency');

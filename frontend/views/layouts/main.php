@@ -8,10 +8,11 @@ use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
 use common\models\Picture;
 use common\models\ProductType;
+use common\models\Info;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$basePath = '../../upload/';
+$basePath     = '../../upload/';
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -21,7 +22,7 @@ AppAsset::register($this);
         <meta charset="<?= Yii::$app->charset ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= Html::csrfMetaTags() ?>
-        <!--<title><?php // Html::encode($this->title)  ?></title>-->
+        <!--<title><?php // Html::encode($this->title)      ?></title>-->
         <?php $this->head() ?>
     </head>
     <body>
@@ -32,8 +33,18 @@ AppAsset::register($this);
             <div class="header_l left">
                 <img src="<?= $basePath . Picture::findOne(['tag' => '上左'])->image ?>" width="270" height="180">
             </div>
-            <div class="header_r right">
-                <img src="<?= $basePath . Picture::findOne(['tag' => '上右'])->image ?>" width="270" height="180">
+            <div class="header_r right" style="">
+                <div class="qq_talk">
+                    <?php  $info = Info::findOne(['tag' => '客服QQ']); echo isset($info) ? htmlspecialchars_decode($info->value) : ""; ?>
+                </div>
+
+                <div class="phone">
+                    <?php $info = Info::findOne(['tag' => '公司电话']); echo isset($info) ? '公司电话：'.$info->value : ""; ?>
+                </div>
+
+
+
+<!--<img src="<? $basePath . Picture::findOne(['tag' => '上右'])->image ?>" width="270" height="180">-->
             </div>
         </div>
         <!--header end -->
@@ -49,9 +60,9 @@ AppAsset::register($this);
                         <ul>
                             <?php
                             $productTypes = ProductType::find()->orderBy('serial')->all();
-                            foreach($productTypes as $productType) :
-                            ?>
-                            <li><a href="<?php echo "index.php?r=site/product&type={$productType->type}" ?>"><?php echo $productType->type; ?></a></li>
+                            foreach ($productTypes as $productType) :
+                                ?>
+                                <li><a href="<?php echo "index.php?r=site/product&type={$productType->type}" ?>"><?php echo $productType->type; ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </div> 

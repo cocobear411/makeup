@@ -33,21 +33,33 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .header_l{
     width:470px;
     height:180px;}
-.header_l a{
-    display:block;
-    width:185px;
-    height:60px;
-    margin-top:20px;
-    margin-left:35px;}
 .header_l a:focus{ outline:none;}
 .header_r{
+    /*background-color: blue;*/
     width:470px;
-    height:180px;}
-.header_r a{
-    display:block;
-    width:250px;
-    height:65px;
-    margin-top:25px;}
+    height:180px;
+}
+
+.phone{
+    
+    float: right;
+    margin-top: 101px;
+    margin-right: 8px;
+    padding-right: 8px;
+    font-family: 'Microsoft YaHei';
+    /*background-color: green;*/
+    font-size: 16px;
+    border-right:2px solid #b28850;
+}
+
+.qq_talk{
+    float: right;
+    margin-top: 100px;
+
+    /*background-color: red;*/
+
+}
+
 .passage {
     width:980px;
     margin:0px auto;
@@ -223,9 +235,14 @@ input:-webkit-autofill{
 
 .login-panel{
     /*position:absolute;*/
+    float: left;
+    /*background-color: black;*/
     top:320px;
-    right:250;
-    padding:45px 35px 20px;
+    right:250px;
+    margin-top: 50px;
+    padding:85px 35px 20px;
+    height: 390px;
+    width: 450px;
     /*    border-radius:2px;
         -moz-border-radius:2px;
         -webkit-border-radius:2px;
@@ -238,6 +255,15 @@ input:-webkit-autofill{
 .login-panel h3{
     font-size:20px;
     font-weight:normal
+}
+
+.agency-image{
+    margin-top: 50px;
+    padding:25px 0px 20px 35px;
+    float: left;
+    height: 450px;
+    width: 425px;
+    /*background-color: green;*/
 }
 
 .login-mod{

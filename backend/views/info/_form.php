@@ -16,13 +16,19 @@ use bamboo\ueditor\Ueditor;
     <?= $form->field($model, 'tag')->textInput(['maxlength' => 255]) ?>
 
     <?php
-//    echo $form->field($model, 'value')->textInput(['maxlength' => 255]);
-    echo $form->field($model, 'value')->widget(Ueditor::classname(), [
-        'options' => [
-            'style'              => "height:500px;",
-        ],
-        '_editor_id' => 'info-value',
-    ]);
+        if(isset($model->value) && $model->value == '公司介绍')
+        {
+            echo $form->field($model, 'value')->widget(Ueditor::classname(), [
+                'options' => [
+                    'style'              => "height:500px;",
+                ],
+                '_editor_id' => 'info-value',
+            ]);
+        }
+        else
+        {
+            echo $form->field($model, 'value')->textInput(['maxlength' => 255]);
+        }
     
     ?>
 
