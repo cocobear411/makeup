@@ -10,6 +10,7 @@ use Yii;
  * @property string $id
  * @property string $title
  * @property string $content
+ * @property string $url
  * @property string $create_time
  * @property string $update_time
  */
@@ -32,7 +33,7 @@ class Article extends \yii\db\ActiveRecord
             [['title', 'content', 'create_time', 'update_time'], 'required'],
             [['content'], 'string'],
             [['create_time', 'update_time'], 'safe'],
-            [['title'], 'string', 'max' => 255]
+            [['title', 'url'], 'string', 'max' => 255]
         ];
     }
 
@@ -42,11 +43,12 @@ class Article extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '美容讲堂ID',
-            'title' => '标题',
-            'content' => '内容',
-            'create_time' => '创建时间',
-            'update_time' => '更新时间',
+            'id' => 'ID',
+            'title' => 'Title',
+            'content' => 'Content',
+            'url' => 'Url',
+            'create_time' => 'Create Time',
+            'update_time' => 'Update Time',
         ];
     }
 }

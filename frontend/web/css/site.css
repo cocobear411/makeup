@@ -41,7 +41,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 }
 
 .phone{
-    
+
     float: right;
     margin-top: 101px;
     margin-right: 8px;
@@ -374,3 +374,10 @@ input:-webkit-autofill{
 /*尖端护肤*/
 .jdhf{ width:980px; margin:0px auto;}
 .jdhf p{ margin:0px; padding:0px;}
+
+.article-index, .article-content{
+    /*background-color: blue;*/
+    width: 980px;
+    margin:0px auto;
+    margin-top: 45px;
+}

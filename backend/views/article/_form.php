@@ -24,6 +24,8 @@ use bamboo\ueditor\Ueditor;
     ]);
     ?>
 
+    <?php // $form->field($model, 'url')->textInput(['maxlength' => 255]) ?>
+
     <?php //$form->field($model, 'content')->textarea(['rows' => 6])   ?>
 
     <?= Html::activeHiddenInput($model, 'create_time', ['value' => $model->isNewRecord ? date('Y-m-d H:i:s') : $model->create_time]) ?>

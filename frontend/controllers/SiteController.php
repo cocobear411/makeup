@@ -53,9 +53,9 @@ class SiteController extends Controller
         return $this->render('product', ['products' => $products]);
     }
 
-    public function actionArticle()
+    public function actionArticle($id = 0)
     {
-        return $this->render('article');
+        return $this->render('article', ['id' => $id]);
     }
 
     public function actionAgency()

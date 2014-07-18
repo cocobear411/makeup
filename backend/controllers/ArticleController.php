@@ -14,11 +14,12 @@ use yii\filters\VerbFilter;
  */
 class ArticleController extends Controller
 {
+
     public function behaviors()
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class'   => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
@@ -32,12 +33,12 @@ class ArticleController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new ArticleSearch();
+        $searchModel  = new ArticleSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+                'searchModel'  => $searchModel,
+                'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -49,7 +50,7 @@ class ArticleController extends Controller
     public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+                'model' => $this->findModel($id),
         ]);
     }
 
@@ -62,11 +63,17 @@ class ArticleController extends Controller
     {
         $model = new Article();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save())
+        {
+            $model->url = "<a href=\"./index.php?r=site/article&id=$model->id\">$model->title</a>";
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
+        }
+        else
+        {
             return $this->render('create', [
-                'model' => $model,
+                    'model' => $model,
             ]);
         }
     }
@@ -81,11 +88,14 @@ class ArticleController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save())
+        {
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
+        }
+        else
+        {
             return $this->render('update', [
-                'model' => $model,
+                    'model' => $model,
             ]);
         }
     }
@@ -112,10 +122,14 @@ class ArticleController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Article::findOne($id)) !== null) {
+        if (($model = Article::findOne($id)) !== null)
+        {
             return $model;
-        } else {
+        }
+        else
+        {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }

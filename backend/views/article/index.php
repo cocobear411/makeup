@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\search\ArticleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = '美容讲堂';
+$this->title = 'Articles';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="article-index">
@@ -16,11 +16,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('新建美容讲堂', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Article', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
-//        'layout' => "{items}\n{pager}",
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
@@ -29,13 +28,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'title',
             'content:ntext',
+            'url',
             'create_time',
-            'update_time',
+            // 'update_time',
 
-            [
-                'class'    => 'yii\grid\ActionColumn',
-                'template' => '{view} {update} {delete}'
-            ],
+            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 
