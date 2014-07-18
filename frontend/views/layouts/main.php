@@ -33,7 +33,7 @@ AppAsset::register($this);
             <div class="header_l left">
                 <img src="<?= $basePath . Picture::findOne(['tag' => '上左'])->image ?>" width="270" height="180">
             </div>
-            <div class="header_r right" style="">
+            <div class="header_r right">
                 <div class="qq_talk">
                     <?php  $info = Info::findOne(['tag' => '客服QQ']); echo isset($info) ? htmlspecialchars_decode($info->value) : ""; ?>
                 </div>
