@@ -16,7 +16,7 @@ use bamboo\ueditor\Ueditor;
     <?= $form->field($model, 'tag')->textInput(['maxlength' => 255]) ?>
 
     <?php
-        if(isset($model->value) && $model->value == '公司介绍')
+        if(isset($model->value) && $model->tag == '公司介绍')
         {
             echo $form->field($model, 'value')->widget(Ueditor::classname(), [
                 'options' => [

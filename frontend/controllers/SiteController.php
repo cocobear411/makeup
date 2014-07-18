@@ -23,38 +23,6 @@ use common\models\Product;
  */
 class SiteController extends Controller
 {
-
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only'  => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow'   => true,
-                        'roles'   => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow'   => true,
-                        'roles'   => ['@'],
-                    ],
-                ],
-            ],
-            'verbs'  => [
-                'class'   => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
     public function actionIndex()
     {
         $picture['upLeft']     = Picture::findOne(['tag' => '上左']);
@@ -99,11 +67,16 @@ class SiteController extends Controller
             {
                 echo "<script>alert('代理信息不存在！');</script>";
             }
-
+            
             return $this->render('agency', ['model' => $model]);
         }
 
         return $this->render('agency');
+    }
+    
+    public function actionError()
+    {
+        $this->goHome();
     }
 
 }
