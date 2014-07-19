@@ -15,9 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('新建公司信息', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+<!--    <p>
+        <?php // Html::a('新建公司信息', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>-->
 
     <?= GridView::widget([
 //        'layout' => "{items}\n{pager}",
@@ -29,12 +29,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'tag',
             'value',
-            'create_time',
+//            'create_time',
             'update_time',
 
             [
                 'class' => 'yii\grid\ActionColumn',
-                'template' => '{view} {update} {delete}',
+                'template' => '{view} {update}',
             ],
         ],
     ]); ?>

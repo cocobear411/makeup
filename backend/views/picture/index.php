@@ -15,9 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('新建公司图片', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+<!--    <p>
+        <?php // Html::a('新建公司图片', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>-->
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -31,7 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'create_time',
             'update_time',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view} {update}',
+            ],
         ],
     ]); ?>
 
