@@ -114,8 +114,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 
 .hiddenDiv{
     position:absolute;
-    width:194px;
-    border:1px solid #FFF;
+    width:196px;
     margin-left:0px;
     display:none;
 }
@@ -123,15 +122,16 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     margin:0;
     padding:0;
 }
+
 .hiddenDiv ul li{
     list-style:none;
 }
 .hiddenDiv ul li a{
     color:#FFF;
+    height: 40px;
     border-bottom:1px solid #FFF;
     text-decoration:none;
     display:block;
-    width:110px;
     text-align:center;
 
 }
@@ -160,7 +160,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .in_picwrap{
     width:980px;
     margin:0px auto;
-    /*border-bottom:#b28850 1px solid;*/
+    border-bottom:#b28850 1px solid;
 }
 .in_picwrap_l,.in_picwrap_c,.in_picwrap_r{ width:322px; height:150px;}
 .in_picwrap_l,.in_picwrap_c{ margin-right:7px;}
