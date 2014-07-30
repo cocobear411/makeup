@@ -39,7 +39,7 @@ AppAsset::register($this);
                 </div>
 
                 <div class="phone">
-                    <?php $info = Info::findOne(['tag' => '公司电话']); echo isset($info) ? '公司电话：'.$info->value : ""; ?>
+                    <?php $info = Info::findOne(['tag' => '400电话']); echo isset($info) ? '400电话：'.$info->value : ""; ?>
                 </div>
 
 
