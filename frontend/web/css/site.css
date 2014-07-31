@@ -64,7 +64,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     width:100%;
     margin:0px auto;
     height:40px;
-   }
+}
 .nav a{
     text-decoration:none;    
     background:#00008d;}
@@ -102,7 +102,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     list-style:none;
 }
 .hiddenDiv ul li a{
-   
+
     color:#FFF;
     height: 40px;
     text-decoration:none;
@@ -120,7 +120,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .passage {
     width:980px;
     margin:0px auto;
-    
+
     text-decoration:none;
     text-align:left; 
     windows:2;
@@ -167,13 +167,13 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     margin:0px auto 5px;
     padding-bottom:5px;
     padding-top:5px;
-  
+
 
 }
 
 
 .wrapper{
-    
+
     width:980px;
     margin:0 auto;
 }
@@ -188,7 +188,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     padding:85px 35px 20px;
     height: 390px;
     width: 450px;
-  
+
 }
 
 .login-panel h3{
