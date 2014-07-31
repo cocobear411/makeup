@@ -31,7 +31,7 @@ AppAsset::register($this);
         <!--header start -->
         <div class="header">
             <div class="header_l left">
-                <img src="<?= $basePath . Picture::findOne(['tag' => '上左'])->image ?>" width="270" height="180">
+                <img src="<?= $basePath . Picture::findOne(['tag' => '上左'])->image ?>" width="479" height="100">
             </div>
             <div class="header_r right">
                 <div class="qq_talk">
