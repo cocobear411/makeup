@@ -13,7 +13,7 @@ use kartik\widgets\FileInput;
 
     <?php $form = ActiveForm::begin([ 'options' => [ 'enctype' => 'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'tag')->textInput(['maxlength' => 32]) ?>
+    <?= $form->field($model, 'tag')->textInput(['maxlength' => 32, 'readonly' => true]) ?>
 
     <?php
     if (!empty($model->image))

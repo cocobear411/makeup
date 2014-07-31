@@ -13,7 +13,7 @@ use bamboo\ueditor\Ueditor;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'tag')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'tag')->textInput(['maxlength' => 255, 'readonly' => true]) ?>
 
     <?php
         if(isset($model->value) && $model->tag == '公司介绍')
