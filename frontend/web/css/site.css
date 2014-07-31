@@ -2,11 +2,12 @@
 /* CSS Document */
 
 body{
-    background:#FFF;
+    background:#f8f8ff;
     height:100%;
     font-family: "宋体",Verdana, Arial, Helvetica, sans-serif;
     margin:0px;
     font-size:12px;}
+
 div,ul,li,dl,dd,form,input,textarea{
     list-style:none;
     overflow:hidden;
@@ -25,45 +26,101 @@ a:link,a:visited{
 }
 a:hover{ text-decoration:underline; color:#cc0000;}
 
-
+/* Header Style*/
 .header{
     width:980px;
-    height:180px;
+    height:100px;
     margin:0px auto;}
 .header_l{
-    width:470px;
-    height:180px;}
+    width:479px;
+    height:100px;}
+
 .header_l a:focus{ outline:none;}
 .header_r{
-    /*background-color: blue;*/
     width:470px;
-    height:180px;
+    height:100px;
 }
 
 .phone{
-
     float: right;
-    margin-top: 101px;
+    margin-top:60px;
     margin-right: 8px;
     padding-right: 8px;
-    font-family: 'Microsoft YaHei';
-    /*background-color: green;*/
+    font-family: "微软雅黑";
     font-size: 16px;
-    border-right:2px solid #b28850;
+    border-right:2px solid #c6a66b;
 }
 
 .qq_talk{
     float: right;
-    margin-top: 100px;
-
-    /*background-color: red;*/
-
+    margin-top: 60px;
 }
 
+
+
+
+/* Nav Style*/
+.nav{   
+    width:100%;
+    margin:0px auto;
+    height:40px;
+}
+.nav a{
+    text-decoration:none;    
+    background:#00008d;}
+
+.nav ul li{
+    float:left;
+    width:20%;
+    height:40px;}
+.nav ul li a:link,.nav ul li a:visited{
+    display:block;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#d3d3d3;
+    font-family:"微软雅黑";
+    font-size:16px;
+    text-decoration:none;}
+.nav ul li a:hover{
+    background: #00008d;
+    color: #fff;
+}
+.nav ul li.last{ }
+.nav ul li.last:hover{ }
+
+.hiddenDiv{
+    position:absolute;
+    width:100%;
+    display:none;
+}
+.hiddenDiv ul{
+}
+
+.hiddenDiv ul li{
+    float:none;
+    list-style:none;
+}
+.hiddenDiv ul li a{
+
+    color:#FFF;
+    height: 40px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+
+}
+.hiddenDiv ul li a:hover{
+}
+.showDiv{ 
+    display:block;
+}
+
+/* Passage Style*/
 .passage {
     width:980px;
     margin:0px auto;
-    /*border-bottom:#b28850 2px solid;*/
+
     text-decoration:none;
     text-align:left; 
     windows:2;
@@ -80,179 +137,63 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 }
 
 
-
-.nav
-{
-    width:980px;
-    margin:0px auto;
-    height:44px;
-    border-top:#b28850 2px solid;
-    border-bottom:#b28850 2px solid;}
-.nav a{
-    text-decoration:none;
-    background:#FFF;}
-
-.nav ul li{
-    float:left;
-    width:196px;
-    height:40px;}
-.nav ul li a:link,.nav ul li a:visited{
-    display:block;
-    width:196px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    color:#000; font-family:"方正姚体";
-    font-size:18px;
-    text-decoration:none;}
-.nav ul li a:hover{
-    background: #e3c992;
-    color: #FFF;
-}
-.nav ul li.last{ border-right:#000 1px solid;}
-.nav ul li.last:hover{ border-right:#e3c992 1px solid;}
-
-.hiddenDiv{
-    position:absolute;
-    width:196px;
-    margin-left:0px;
-    display:none;
-}
-.hiddenDiv ul{
-    margin:0;
-    padding:0;
-}
-
-.hiddenDiv ul li{
-    list-style:none;
-}
-.hiddenDiv ul li a{
-    color:#FFF;
-    height: 40px;
-    border-bottom:1px solid #FFF;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-
-}
-.hiddenDiv ul li a:hover{
-    border-bottom-style:solid;
-    color:#FFF;
-}
-.showDiv{
-    display:block;
-}
+/* In Style*/
 .in_focus{
     width:980px;
     height:588px;
     margin:0px auto 5px;
     padding-bottom:5px;
-    padding-top:5px;
-    border-bottom:#b28850 2px solid;}
+    padding-top:5px;}
+
 .in_mask{
     width:980px;
     height:2463px;
     margin:0px auto 5px;
     padding-bottom:5px;
-    padding-top:5px;
-    border-bottom:#b28850 2px solid;}
+    padding-top:5px;}
 
 .in_picwrap{
     width:980px;
-    margin:0px auto;
-}
+    margin:0px auto;}
+
 .in_picwrap_l,.in_picwrap_c,.in_picwrap_r{ width:322px; height:150px;}
 .in_picwrap_l,.in_picwrap_c{ margin-right:7px;}
 
 
-button,input,select,textarea{
-    font-family:inherit;
-    font-size:100%;
-    margin:0;
-    *font-family:"微软雅黑",Helvetica,"黑体",Arial,Tahoma
-}
 
-
-button,select{
-    text-transform:none
-}
-
-button,html input[type="button"],input[type="reset"],input[type="submit"]{
-    cursor:pointer;
-    -webkit-appearance:button
-}
-
-button[disabled],html input[disabled]{
-    cursor:default
-}
-
-input[type="checkbox"],input[type="radio"]{
-    box-sizing:border-box;
-    padding:0
-}
-
-input[type="search"]{
-    box-sizing:content-box;
-    -moz-box-sizing:content-box;
-    -webkit-appearance:textfield;
-    -webkit-box-sizing:content-box
-}
-
-input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{
-    -webkit-appearance:none
-}
-
-button::-moz-focus-inner,input::-moz-focus-inner{
-    border:0;
-    padding:0
-}
-
-textarea{
-    overflow:auto;
-    vertical-align:top
-}
-
-
-input:-webkit-autofill{
-    -webkit-box-shadow:0 0 0 1000px white inset
-}
 
 .banner{
     width:980px;
     margin:0px auto 5px;
     padding-bottom:5px;
     padding-top:5px;
-    border-bottom:#b28850 2px solid;
+
 
 }
 
+
 .wrapper{
+
     width:980px;
-    margin:0 auto
+    margin:0 auto;
 }
 
 
 .login-panel{
-    /*position:absolute;*/
+
     float: left;
-    /*background-color: black;*/
     top:320px;
     right:250px;
     margin-top: 50px;
     padding:85px 35px 20px;
     height: 390px;
     width: 450px;
-    /*    border-radius:2px;
-        -moz-border-radius:2px;
-        -webkit-border-radius:2px;
-        box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-        -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-        -webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
-        background-color:#FFF*/
+
 }
 
 .login-panel h3{
     font-size:20px;
+    font-family:"微软雅黑";
     font-weight:normal
 }
 
@@ -355,7 +296,7 @@ input:-webkit-autofill{
     margin-top:3px;
     padding:15px 0px 50px 0px;
     text-align:center;
-    border-top:#b28850 2px solid;
+    border-top:#b28850 1px solid;
 
 }
 .footer a:link,.footer a:visited{
