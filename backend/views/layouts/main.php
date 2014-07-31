@@ -26,7 +26,7 @@ AppAsset::register($this);
         <div class="wrap">
             <?php
             NavBar::begin([
-                'brandLabel' => '思弗迩',
+                'brandLabel' => 'TCIPHER',
                 'brandUrl'   => Yii::$app->homeUrl,
                 'options'    => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -75,7 +75,7 @@ AppAsset::register($this);
 
         <footer class="footer">
             <div class="container">
-                <p class="pull-left">&copy; 思弗迩 <?= date('Y') ?></p>
+                <p class="pull-left">&copy; TCIPHER <?= date('Y') ?></p>
                 <!--<p class="pull-right"><?php //echo Yii::powered() ?></p>-->
             </div>
         </footer>
