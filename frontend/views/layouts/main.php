@@ -69,7 +69,7 @@ AppAsset::register($this);
                     <!-- hiddenDiv end -->
 
                 </li> 
-                <li><a href="index.php?r=site/article">美容讲堂</a></li>
+                <li><a href="index.php?r=site/article">实时资讯</a></li>
                 <li><a href="index.php?r=site/agency">代理查询</a></li>
                 <li><a href="index.php?r=site/company">公司介绍</a></li>
 
