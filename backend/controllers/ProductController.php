@@ -108,6 +108,7 @@ class ProductController extends Controller
 
         if (\Yii::$app->request->isPost)
         {
+            $model->load(Yii::$app->request->post());
             $imageUploadFile = UploadedFile::getInstance($model, 'image');
 
             if ($imageUploadFile !== null && $imageUploadFile->tempName != null)

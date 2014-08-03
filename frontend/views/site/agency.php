@@ -2,11 +2,13 @@
 
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use common\models\Picture;
 
 $basePath = "../../upload/";
 ?>
 <!--wrapper start -->
-<div class="wrapper">
+<div class="wrapper" >
+    <img src="<?= $basePath . Picture::findOne(['tag' => '查询'])->image ?>">
     <div class="login-panel">
         <h3>代理信息查询</h3>
         <div class="login-mod">
