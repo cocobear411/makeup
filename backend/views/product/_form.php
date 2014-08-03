@@ -16,6 +16,8 @@ use kartik\widgets\FileInput;
     <?= $form->field($model, 'type')->textInput(['maxlength' => 32]) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => 32]) ?>
+    
+    <?= $form->field($model, 'index')->textInput(); ?>
 
     <?php
     if (!empty($model->image))

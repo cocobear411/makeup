@@ -4,14 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use common\models\search\ArticleSearch;
 use common\models\Article;
+use yii\data\ArrayDataProvider;
 ?>
 
 <?php if(empty($id)) : ?>
 <div class="article-index">
 
     <?php
-    $searchModel  = new ArticleSearch();
-    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+    $query = Article::find()->asArray()->all();
+
+    $dataProvider = new ArrayDataProvider([
+        'allModels' => $query,
+    ]);
     ?>
 
     <?=
