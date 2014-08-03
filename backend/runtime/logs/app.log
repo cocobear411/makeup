@@ -15347,3 +15347,615 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1405689134.939
     'REQUEST_TIME' => 1405689134
 ]
+2014-08-02 23:32:14 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-02 23:32:14 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'a0loczdUamgEAzkifBknDlkFPxtlLCs5IWQfEA4kJl8TMQ4CWjEDLQ=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-02 23:31:55'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\php92FE.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 82276
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => '8c6aec86c0f5ec178f4b5920b2b7bbfa05d6053730bd7efbfeb61068009392bfs:32:\"Yf6vND8fy6M4HM-ibn_hTIe0ndgsuIvz\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '83081'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryy3fZ1u3kdO53b9DA'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=8c6aec86c0f5ec178f4b5920b2b7bbfa05d6053730bd7efbfeb61068009392bfs%3A32%3A%22Yf6vND8fy6M4HM-ibn_hTIe0ndgsuIvz%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '56803'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406993534.461
+    'REQUEST_TIME' => 1406993534
+]
+2014-08-02 23:34:12 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-02 23:34:12 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'dEIuZi5LeDUmB2UfZRgzWQcgZTJBLg95RBp2H1gyOmEuOhtRRX9OZA=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-02 23:32:29'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1_副本.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\php5E88.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 33149
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => 'bf28fc93a568f861377c2e72e099be23ab48fe6ac01d90a647ff67b6cc412adcs:32:\"u2ZImhqyiySsSitl8DWR_34Ku4Cqu6Ib\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '33961'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary8upk4K56BLWvEF5y'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=bf28fc93a568f861377c2e72e099be23ab48fe6ac01d90a647ff67b6cc412adcs%3A32%3A%22u2ZImhqyiySsSitl8DWR_34Ku4Cqu6Ib%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '56891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406993652.103
+    'REQUEST_TIME' => 1406993652
+]
+2014-08-03 00:16:15 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-03 00:16:15 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'RGJmM0U4Z3MGBgh.EmwgIyg3J1V2SiIdB1I2dXV1IRYVUgRKFQBeIw=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-03 00:15:52'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1_副本.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\phpDF4F.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 33149
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => 'b09df1e413c1ad3a8e05831c3d410d18a080b5bba558011653aa0001784a0d64s:32:\"fbyhrm2seB9w7tJqvvZFGQPnOm33pV9z\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '33961'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDUk8UbtkANiMIRDI'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=b09df1e413c1ad3a8e05831c3d410d18a080b5bba558011653aa0001784a0d64s%3A32%3A%22fbyhrm2seB9w7tJqvvZFGQPnOm33pV9z%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '58977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406996175.432
+    'REQUEST_TIME' => 1406996175
+]
+2014-08-03 00:18:24 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-03 00:18:24 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'LWJmclE5bzAcEgs0NA42akEpMCVlABhHdU9UNRgOOUB9DAATY3s6Wg=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-03 00:18:14'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\phpD8EE.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 82276
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => '7ef9378e8b58f6fb583b973a8c9b8f200975830b8eb1b3ed982f86748abe9cd2s:32:\"Mcwiv-kin-sfZGtCXyzMHNqvOjcYbHsm\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '83081'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary2Mc4Oj0pSF2HxUji'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=7ef9378e8b58f6fb583b973a8c9b8f200975830b8eb1b3ed982f86748abe9cd2s%3A32%3A%22Mcwiv-kin-sfZGtCXyzMHNqvOjcYbHsm%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '59184'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406996304.874
+    'REQUEST_TIME' => 1406996304
+]
+2014-08-03 00:19:39 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-03 00:19:39 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'dHZDcFpLcU81HjUEFHgrBiJBdxksejwJPB4AOTg9EhssIwQzFRJFNg=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-03 00:19:31'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\phpFDC1.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 82276
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => 'c56d8ce3887ef7ad85d1d6552c1a999ee533147d8761d043d97f0bc9dbb0b963s:32:\"hFWkexh22m8p2no0MpPDLJt04P5OzUFw\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '83081'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycmVyJahX7xxAQea0'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=c56d8ce3887ef7ad85d1d6552c1a999ee533147d8761d043d97f0bc9dbb0b963s%3A32%3A%22hFWkexh22m8p2no0MpPDLJt04P5OzUFw%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '59306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406996379.835
+    'REQUEST_TIME' => 1406996379
+]
+2014-08-03 00:21:05 [::1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Controller.php:109
+Stack trace:
+#0 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Controller.php(146): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Module.php(460): yii\base\Controller->runAction('update', Array)
+#2 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\web\Application.php(82): yii\base\Module->runAction('picture/update', Array)
+#3 C:\xampp\htdocs\makeup\vendor\yiisoft\yii2\base\Application.php(369): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\makeup\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2014-08-03 00:21:05 [::1][1][-][info][application] $_GET = [
+    'r' => 'picture/update'
+    'id' => '32'
+]
+
+$_POST = [
+    '_csrf' => 'cV92NmUwUFEDCREEBgVmHhIPL0QWeAgBQDMMVTBgYyEfHDVmUlgjCA=='
+    'Picture' => [
+        'tag' => '查询'
+        'image' => ''
+        'create_time' => '2014-07-13 14:42:24'
+        'update_time' => '2014-08-03 00:20:47'
+    ]
+]
+
+$_FILES = [
+    'Picture' => [
+        'name' => [
+            'image' => '未标题-1_副本.jpg'
+        ]
+        'type' => [
+            'image' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'image' => 'C:\\xampp\\tmp\\php4AAA.tmp'
+        ]
+        'error' => [
+            'image' => 0
+        ]
+        'size' => [
+            'image' => 33149
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '21o6o19ur1s9k324vf2m5494f0'
+    '_csrf' => '104236cd50b8d4c88acd71ef4c29fac98aa036c799d775b77dae5ad0e31bc29es:32:\"dvluQVRpalctQbZ27uj3IWCokiaO6dog\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/makeup/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '33961'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarykMSvBHeljiBwne7D'
+    'HTTP_REFERER' => 'http://localhost/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=21o6o19ur1s9k324vf2m5494f0; _csrf=104236cd50b8d4c88acd71ef4c29fac98aa036c799d775b77dae5ad0e31bc29es%3A32%3A%22dvluQVRpalctQbZ27uj3IWCokiaO6dog%22%3B'
+    'PATH' => 'C:\\Java\\jdk1.6.0_11\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Java\\jdk1.6.0_11\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/makeup/backend/web/index.php'
+    'REMOTE_PORT' => '59390'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=picture%2Fupdate&id=32'
+    'REQUEST_URI' => '/makeup/backend/web/index.php?r=picture%2Fupdate&id=32'
+    'SCRIPT_NAME' => '/makeup/backend/web/index.php'
+    'PHP_SELF' => '/makeup/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1406996465.051
+    'REQUEST_TIME' => 1406996465
+]
