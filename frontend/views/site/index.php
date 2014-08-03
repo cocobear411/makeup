@@ -9,7 +9,7 @@ $basePath = '../../upload/';
 
 <div class="in_picwrap">
     <div class="in_picwrap_wide">
-        <img src="<?= $basePath . $picture['downLeft']->image ?>" width="980" height="150">
+        <img src="<?= $basePath . $picture['down']->image ?>" width="980" height="150">
     </div>
 </div>
 <!--in_picwrap end -->
