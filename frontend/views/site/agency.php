@@ -40,7 +40,7 @@ $basePath = "../../upload/";
     <?php else : ?>
     
     <div class="agency-image">
-        <a class="image-link" href="<?= $basePath . $model->image; ?>" data-lightbox="<?= $model->code ?>" data-title="<?= $model->code ?>"><img src="<?= $basePath . $model->image; ?>" width="300" height="400"></a>
+        <a class="image-link" href="<?= $basePath . $model->image; ?>" data-lightbox="<?= $model->code ?>"><img src="<?= $basePath . $model->image; ?>" width="300" height="400"></a>
     </div>
     <?php endif ?>
 </div>
