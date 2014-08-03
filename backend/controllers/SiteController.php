@@ -26,11 +26,11 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup'],
+                        'actions' => ['login', 'error', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup', ],
                         'allow'   => true,
                     ],
                     [
-                        'actions' => ['logout', 'index', 'change-password', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup'],
+                        'actions' => ['logout', 'index', 'change-password', 'uploadimg', 'backimg', 'scrawup', 'getmovie', 'remoteimage', 'fileup', 'test'],
                         'allow'   => true,
                         'roles'   => ['@'],
                     ],
@@ -40,12 +40,7 @@ class SiteController extends Controller
                 'class'   => VerbFilter::className(),
                 'actions' => [
                     'logout'      => ['post'],
-                    'uploadimg'   => ['post'],
-                    'backimg'     => ['post'],
-                    'scrawup'     => ['post'],
-                    'getmovie'    => ['post'],
-                    'remoteimage' => ['post'],
-                    'fileup'      => ['post'],
+                    'uploadimg' => ['post'],
                 ],
             ],
         ];
@@ -156,7 +151,7 @@ class SiteController extends Controller
     public function actionBackimg()
     {
         UFunction::backList();
-//        exit;
+        exit;
     }
 
     /**
@@ -165,6 +160,13 @@ class SiteController extends Controller
     public function actionUploadimg()
     {
         UFunction::FileUpload();
+    }
+
+    public function actionTest()
+    {
+        echo Yii::$app->request->baseUrl;
+        echo "<br/>";
+        echo Yii::$app->urlManager->createUrl('/site/uploadimg');
     }
 
 }

@@ -46,7 +46,7 @@ AppAsset::register($this);
                 $menuItems[] = ['label' => '公司图片', 'url' => ['picture/index']];
                 $menuItems[] = ['label' => '产品信息', 'url' => ['product/index']];
                 $menuItems[] = ['label' => '产品类型', 'url' => ['product-type/index']];
-                $menuItems[] = ['label' => '美容讲堂', 'url' => ['article/index']];
+                $menuItems[] = ['label' => '实时资讯', 'url' => ['article/index']];
                 $menuItems[] = ['label' => '代理信息', 'url' => ['agency/index']];
 
                 $menuItems[] = ['label' => '修改密码', 'url' => ['site/change-password']];

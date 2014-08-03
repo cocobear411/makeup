@@ -12,10 +12,10 @@ use yii\data\ArrayDataProvider;
 
     <?php
     $query = Article::find()->asArray()->all();
+
     $dataProvider = new ArrayDataProvider([
         'allModels' => $query,
     ]);
-
     ?>
 
     <?=

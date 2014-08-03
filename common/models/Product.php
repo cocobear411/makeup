@@ -10,6 +10,7 @@ use Yii;
  * @property string $id
  * @property string $type
  * @property string $name
+ * @property string $index
  * @property string $image
  * @property string $create_time
  * @property string $update_time
@@ -30,7 +31,8 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'name', 'create_time', 'update_time'], 'required'],
+            [['type', 'name', 'index', 'create_time', 'update_time'], 'required'],
+            [['index'], 'integer'],
             [['create_time', 'update_time'], 'safe'],
             [['type', 'name'], 'string', 'max' => 32],
             [['image'], 'string', 'max' => 255]
@@ -46,6 +48,7 @@ class Product extends \yii\db\ActiveRecord
             'id' => '产品信息ID',
             'type' => '类型',
             'name' => '名称',
+            'index' => '排序',
             'image' => '图片',
             'create_time' => '创建时间',
             'update_time' => '更新时间',

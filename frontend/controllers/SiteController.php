@@ -49,7 +49,7 @@ class SiteController extends Controller
 
     public function actionProduct($type)
     {
-        $products = Product::find()->where(['type' => $type])->all();
+        $products = Product::find()->where(['type' => $type])->orderBy('index')->all();
         return $this->render('product', ['products' => $products]);
     }
 
