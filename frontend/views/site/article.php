@@ -44,7 +44,22 @@ use yii\data\ArrayDataProvider;
 <?php else : ?>
 
 <div class="article-content">
-<?= Article::findOne($id)->content; ?>
+    <?php  $article = Article::findOne($id); ?>
+    
+    <div class="ar_title">
+        <?= $article->title; ?>
+    </div>
+    
+    <div class="ar_time">
+        <?php
+        $create_time = $article->create_time;
+        echo substr($create_time, 0, 10);
+        ?>
+    </div>
+    
+    <div>
+        <?= $article->content; ?>
+    </div>
 </div>
 
 <?php endif; ?>
