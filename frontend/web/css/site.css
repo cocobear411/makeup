@@ -160,6 +160,10 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .in_picwrap_l,.in_picwrap_c,.in_picwrap_r{ width:322px; height:150px;}
 .in_picwrap_l,.in_picwrap_c{ margin-right:7px;}
 
+.in_picwrap_wide {
+	width: 980px;
+	height : 150px;
+}
 
 
 .banner{
