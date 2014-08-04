@@ -44,7 +44,7 @@ AppAsset::register($this);
 
 
 
-<!--<img src="<? $basePath . Picture::findOne(['tag' => '上右'])->image ?>" width="270" height="180">-->
+<!--<img src="<?php // $basePath . Picture::findOne(['tag' => '上右'])->image ?>" width="270" height="180">-->
             </div>
         </div>
         <!--header end -->

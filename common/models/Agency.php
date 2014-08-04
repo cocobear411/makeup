@@ -52,7 +52,7 @@ class Agency extends \yii\db\ActiveRecord
         ];
     }
 
-    public function saveImage($imageUploadInstance)
+    public static function saveImage($imageUploadInstance)
     {
         if ($imageUploadInstance == null)
         {
