@@ -59,10 +59,15 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 
 
 /* Nav Style*/
-.nav{   
+.bg_nav{
     width:100%;
-    margin:0px auto;
-    height:40px;
+    background:#00008d;
+     height:40px;
+}
+.nav{ 
+    width:980px; 
+	margin:0px auto; 
+	height:40px; 
 }
 .nav a{
     text-decoration:none;    
@@ -71,8 +76,12 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 .nav ul li{
     location:center;
     float:left;
-    width:20%;
-    height:40px;}
+    width:196px;
+    height:40px;
+ list-style:none;
+    overflow:hidden;
+    margin:0;
+    padding:0;}
 .nav ul li a:link,.nav ul li a:visited{
    
     display:block;
@@ -103,7 +112,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
     list-style:none;
 }
 .hiddenDiv ul li a{
-
+    
     color:#FFF;
     height: 40px;
     text-decoration:none;
@@ -308,12 +317,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 
 /* table css* table table-striped table-bordered*/
 table{
-	font-family:"微软雅黑";
-        font-size:16px;
-	color:#333333;
-	border-width: 1px;
-	border-color: #999999;
-	border-collapse: collapse;
+	border-top:4px solid #D7D7D7;border-bottom:1px solid #E2E2E2;height:48px;background:#F0F0F0
 }
 table th {
         font-family:"方正宋体";

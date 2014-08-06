@@ -9,7 +9,7 @@ use yii\data\ArrayDataProvider;
 
 <?php if(empty($id)) : ?>
 <div class="article-index">
-
+  
     <?php
     $query = Article::find()->asArray()->all();
 
@@ -44,6 +44,7 @@ use yii\data\ArrayDataProvider;
 <?php else : ?>
 
 <div class="article-content">
+    
     <?php  $article = Article::findOne($id); ?>
     
     <div class="ar_title">

@@ -50,6 +50,7 @@ AppAsset::register($this);
         <!--header end -->
 
         <!--nav start -->
+        <div class="bg_nav">
         <div class="nav">
             <ul>
                 <li><a href="index.php?r=site/index">品牌首页</a></li>
@@ -74,6 +75,7 @@ AppAsset::register($this);
                 <li><a href="index.php?r=site/company">公司介绍</a></li>
 
             </ul>
+        </div>
         </div>
         <!--nav end -->
 
