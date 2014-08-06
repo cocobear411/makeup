@@ -28,9 +28,7 @@ class SiteController extends Controller
         $picture['upLeft']     = Picture::findOne(['tag' => '上左']);
         $picture['upRight']    = Picture::findOne(['tag' => '上右']);
         $picture['middle']     = Picture::findOne(['tag' => '中']);
-        $picture['downLeft']   = Picture::findOne(['tag' => '下左']);
-        $picture['downMiddel'] = Picture::findOne(['tag' => '下中']);
-        $picture['downRight']  = Picture::findOne(['tag' => '下右']);
+        $picture['down']   = Picture::findOne(['tag' => '下']);
 
         return $this->render('index', ['picture' => $picture]);
     }
