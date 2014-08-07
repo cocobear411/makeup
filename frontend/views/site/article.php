@@ -12,37 +12,22 @@ use yii\widgets\ListView;
 <div class="article-index">
     
     <?php
-    $query = Article::find();
+    $query = Article::find()->orderBy(['create_time' => SORT_DESC]);
 
     $dataProvider = new ActiveDataProvider([
         'query' => $query,
+        'pagination' => [
+                'pageSize' => 10,
+             ],
     ]);
     ?>
 
     <?=
-<<<<<<< HEAD
-    GridView::widget([
-        'dataProvider' => $dataProvider,
-        'columns'      => [
-//            [
-//                'class' => 'yii\grid\SerialColumn'
-//            ],
-            [
-                'attribute' => 'url',
-                'label'     => '标题',
-                'format' => 'html',
-            ],
-            [
-                'attribute' => 'create_time',
-                'label' => '创建时间',
-                'format' => 'date',
-            ]
-        // 'update_time',
-=======
+
     ListView::widget([
         'itemOptions' => [
             'class' => "listItem",
->>>>>>> 17e89a64502137e51bdba9908bf9840df0c96032
+
         ],
         'dataProvider' => $dataProvider,
         'itemView' => '_view',

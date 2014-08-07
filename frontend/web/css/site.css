@@ -316,6 +316,58 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 }
 
 /* table css* table table-striped table-bordered*/
+.list-view{
+ 
+	background-color:#FFF;
+    width:980px; 
+    margin:0px auto; 
+    padding:30px 0 50px;
+    min-height:336px;
+   
+        
+}
+.listItem{
+    width:960px; 
+    margin:0px auto; 
+    display:block;
+    position:relative;
+ 
+    font-size:14px;
+    border-bottom:1px dotted #BFBFBF;
+    
+}
+
+
+.listItem a{
+    padding-left: 20px;
+    height:37px;
+    line-height:37px;
+    color: #000;
+    margin:0 auto;
+    }
+.listItem a:link,listItem a:visited{
+    display:block;
+    color:#000;
+    font-family:"微软雅黑";
+    font-size:16px;
+    text-decoration:none;
+    }
+.listItemUrl{
+
+    
+            padding-right:30px;
+            overflow:hidden
+}
+.listItem a:hover{
+    
+    text-decoration:none;
+    color:#999;
+    border-left:4px solid #00008d;
+    font-family:"微软雅黑";
+    font-size:20px;}
+.listItemCT{position:absolute;top:0;right:4%;line-height:37px;color:#999;font-size:12px}
+
+
 
 
 /*article css*/
