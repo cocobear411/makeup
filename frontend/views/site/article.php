@@ -4,21 +4,23 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use common\models\search\ArticleSearch;
 use common\models\Article;
-use yii\data\ArrayDataProvider;
+use yii\data\ActiveDataProvider;
+use yii\widgets\ListView;
 ?>
 
 <?php if(empty($id)) : ?>
 <div class="article-index">
     
     <?php
-    $query = Article::find()->asArray()->all();
+    $query = Article::find();
 
-    $dataProvider = new ArrayDataProvider([
-        'allModels' => $query,
+    $dataProvider = new ActiveDataProvider([
+        'query' => $query,
     ]);
     ?>
 
     <?=
+<<<<<<< HEAD
     GridView::widget([
         'dataProvider' => $dataProvider,
         'columns'      => [
@@ -36,7 +38,17 @@ use yii\data\ArrayDataProvider;
                 'format' => 'date',
             ]
         // 'update_time',
+=======
+    ListView::widget([
+        'itemOptions' => [
+            'class' => "listItem",
+>>>>>>> 17e89a64502137e51bdba9908bf9840df0c96032
         ],
+        'dataProvider' => $dataProvider,
+        'itemView' => '_view',
+         'pager'=>array(  
+                'maxButtonCount'=>'5',
+                ),
     ]);
     ?>
 
