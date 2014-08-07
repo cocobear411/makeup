@@ -316,49 +316,7 @@ a:hover{ text-decoration:underline; color:#cc0000;}
 }
 
 /* table css* table table-striped table-bordered*/
-table{
-	border-top:4px solid #D7D7D7;border-bottom:1px solid #E2E2E2;height:48px;background:#F0F0F0
-}
-table th {
-        font-family:"方正宋体";
-        color: #d3d3d3;
-        font-size:18px;
-	background-color:#00008d;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	
-}
-table tr {
-	background-color:#d4e3e5;
-        
-}
-table td {
-    font-family:"微软雅黑";
-        font-size:16px;
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #a9c6c9;
-}
 
-table a{
-    text-decoration:none;    
-    }
-
-
-table td:link,table td  a:visited{
-   
-    display:block;
- 
-
-    text-align:center;
-    color:#000; 
-    text-decoration:none;}
-table td a:hover{
- 
-    color: #999999;
-}
 
 /*article css*/
 .ar_title {

@@ -9,7 +9,7 @@ use yii\data\ArrayDataProvider;
 
 <?php if(empty($id)) : ?>
 <div class="article-index">
-  
+    
     <?php
     $query = Article::find()->asArray()->all();
 
@@ -22,9 +22,9 @@ use yii\data\ArrayDataProvider;
     GridView::widget([
         'dataProvider' => $dataProvider,
         'columns'      => [
-            [
-                'class' => 'yii\grid\SerialColumn'
-            ],
+//            [
+//                'class' => 'yii\grid\SerialColumn'
+//            ],
             [
                 'attribute' => 'url',
                 'label'     => '标题',
